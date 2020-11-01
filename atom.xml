@@ -13,8 +13,8 @@
   
   <entry>
     <title>第一篇博客</title>
-    <link href="http://example.com/2020/11/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2020/11/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://example.com/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-11-01T05:52:20.000Z</published>
     <updated>2020-11-01T05:58:05.942Z</updated>
     
@@ -33,8 +33,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2020/11/01/hello-world/"/>
-    <id>http://example.com/2020/11/01/hello-world/</id>
+    <link href="http://example.com/uncategorized/hello-world/"/>
+    <id>http://example.com/uncategorized/hello-world/</id>
     <published>2020-11-01T01:44:33.226Z</published>
     <updated>2020-11-01T01:44:33.226Z</updated>
     
