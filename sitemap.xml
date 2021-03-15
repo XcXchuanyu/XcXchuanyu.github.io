@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/uncategorized/Computing/Java%20compator/</loc>
+    <loc>http://example.com/uncategorized/Study/CS5331%20Web%20Security/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/Study/CS5331%20Web%20Security/</loc>
+    <loc>http://example.com/uncategorized/Computing/TCPIP/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/Computing/Java%20compator/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
