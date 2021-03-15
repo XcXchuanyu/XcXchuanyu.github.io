@@ -135,11 +135,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/JAVA/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/"/>
-    <id>http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/JAVA/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/</id>
+    <title>Java自定义比较器</title>
+    <link href="http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/"/>
+    <id>http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/</id>
     <published>2020-11-02T02:37:40.374Z</published>
-    <updated>2021-01-02T03:01:52.528Z</updated>
+    <updated>2021-03-15T02:51:06.275Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Java自定义比较器"><a href="#Java自定义比较器" class="headerlink" title="Java自定义比较器"></a>Java自定义比较器</h2><ol><li>Override<br>两种比较器重写方法<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 常见的比较器用法</span><br><span class="line">Arrays.sort(Integer[], cmp);</span><br><span class="line">Collections.sort(collections, cmp);</span><br></pre></td></tr></table></figure>​        lambda简写<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Comparator&lt;Integer&gt; cmp &#x3D; (a,b) -&gt; &#123;</span><br><span class="line">            int cA &#x3D; count.getOrDefault(a,0);</span><br><span class="line">            int cB &#x3D; count.getOrDefault(b,0);</span><br><span class="line">            if (cA &#x3D;&#x3D; cB) &#123;</span><br><span class="line">                return b - a;</span><br><span class="line">            &#125;</span><br><span class="line">            return cA - cB;</span><br><span class="line">        &#125;;</span><br></pre></td></tr></table></figure>​        内部匿名方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Collections.sort(collections, new Comparator&lt;T&gt;() &#123;</span><br><span class="line">    return T.a - T.b; #increasing </span><br><span class="line">    return T.b - T.a; #decreasing</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li><li>lambda函数(JDK8)<br>可参考：<a href="https://objcoding.com/2019/03/04/lambda/">lambda</a></li></ol>]]></content>
     
