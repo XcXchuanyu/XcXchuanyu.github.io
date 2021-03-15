@@ -6,17 +6,17 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-15T02:37:01.552Z</updated>
+  <updated>2021-03-15T02:47:20.041Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>正向代理与反向代理</title>
-    <link href="http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
-    <id>http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
+    <link href="http://example.com/uncategorized/Computing/proxy/"/>
+    <id>http://example.com/uncategorized/Computing/proxy/</id>
     <published>2021-02-26T11:31:50.924Z</published>
-    <updated>2021-03-15T02:37:01.552Z</updated>
+    <updated>2021-03-15T02:47:20.041Z</updated>
     
     <content type="html"><![CDATA[<ol><li><p>正向代理</p><p>代理访问外部资源</p><p>正向代理 是一个位于客户端和原始服务器(origin server)之间的服务器，为了从原始服务器取得内容，客户端向代理发送一个请求并指定目标(原始服务器)，然后代理向原始服务器转交请求并将获得的内容返回给客户端。客户端必须要进行一些特别的设置才能使用正向代理。</p></li></ol><ol start="2"><li><p>反向代理</p><p>反向代理以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个服务器。</p></li></ol><ol start="3"><li><p>反向代理的作用：</p><p>（1）保证内网的安全，可以使用反向代理提供WAF功能，阻止web攻击</p><p>（2）负载均衡，通过反向代理服务器来优化网站的负载</p></li></ol><p><img src="https://images2015.cnblogs.com/blog/305504/201611/305504-20161112125907030-1432469707.png" alt="img"></p>]]></content>
     
@@ -76,8 +76,8 @@
   
   <entry>
     <title>2020回顾——旅行篇（二）</title>
-    <link href="http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%B8%89%EF%BC%89/</id>
+    <link href="http://example.com/uncategorized/travel3/"/>
+    <id>http://example.com/uncategorized/travel3/</id>
     <published>2021-01-02T16:28:37.429Z</published>
     <updated>2021-03-15T02:47:09.042Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>2020回顾——旅行篇（二）</title>
-    <link href="http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <link href="http://example.com/uncategorized/travel2/"/>
+    <id>http://example.com/uncategorized/travel2/</id>
     <published>2021-01-02T16:28:21.967Z</published>
     <updated>2021-03-15T02:47:00.298Z</updated>
     
@@ -116,8 +116,8 @@
   
   <entry>
     <title>2020回顾——旅行篇（一）</title>
-    <link href="http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://example.com/uncategorized/2020%E5%9B%9E%E9%A1%BE%E2%80%94%E2%80%94%E6%97%85%E8%A1%8C%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <link href="http://example.com/uncategorized/travel1/"/>
+    <id>http://example.com/uncategorized/travel1/</id>
     <published>2021-01-02T03:21:29.916Z</published>
     <updated>2021-03-15T02:47:13.578Z</updated>
     
@@ -136,8 +136,8 @@
   
   <entry>
     <title>Java自定义比较器</title>
-    <link href="http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/"/>
-    <id>http://example.com/uncategorized/%E6%8A%80%E6%9C%AF/Java%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/</id>
+    <link href="http://example.com/uncategorized/Computing/Java%20compator/"/>
+    <id>http://example.com/uncategorized/Computing/Java%20compator/</id>
     <published>2020-11-02T02:37:40.374Z</published>
     <updated>2021-03-15T02:51:06.275Z</updated>
     
