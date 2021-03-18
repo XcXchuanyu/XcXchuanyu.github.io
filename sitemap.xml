@@ -2,14 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/uncategorized/Jobs/tencent2/</loc>
+    
+    <lastmod>2021-03-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/Jobs/tencent1/</loc>
+    
+    <lastmod>2021-03-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/Hive/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/uncategorized/Study/CS5331%20Web%20Security/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/mybigdataproject/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/HDFS/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/Hbase/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/Kafka/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/Computing/Java%20Hashmap/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/Linux/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/zookeeper/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/TechReview/Mysql/</loc>
+    
+    <lastmod>2021-03-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/Computing/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/Computing/TCPIP/</loc>
+    <loc>http://example.com/uncategorized/Computing/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
@@ -60,7 +144,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-03-15</lastmod>
+    <lastmod>2021-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

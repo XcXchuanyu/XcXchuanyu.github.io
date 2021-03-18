@@ -6,18 +6,271 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-15T07:35:24.873Z</updated>
+  <updated>2021-03-18T08:19:01.068Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TCP/IP</title>
-    <link href="http://example.com/uncategorized/Computing/TCPIP/"/>
-    <id>http://example.com/uncategorized/Computing/TCPIP/</id>
-    <published>2021-03-15T07:33:11.989Z</published>
-    <updated>2021-03-15T07:35:24.873Z</updated>
+    <title></title>
+    <link href="http://example.com/uncategorized/Jobs/tencent1/"/>
+    <id>http://example.com/uncategorized/Jobs/tencent1/</id>
+    <published>2021-03-18T08:19:01.068Z</published>
+    <updated>2021-03-18T08:19:01.068Z</updated>
     
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>腾讯技术支持2</title>
+    <link href="http://example.com/uncategorized/Jobs/tencent2/"/>
+    <id>http://example.com/uncategorized/Jobs/tencent2/</id>
+    <published>2021-03-18T08:18:40.635Z</published>
+    <updated>2021-03-18T09:00:43.046Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="TCP与UDP"><a href="#TCP与UDP" class="headerlink" title="TCP与UDP"></a>TCP与UDP</h3><p>TCP (Transmission Control Protocol)和UDP(User Datagram Protocol)协议属于传输层协议。其中TCP提供IP环境下的数据可靠传输，它提供的服务包括数据流传送、可靠性、有效流控、全双工操作和多路复用。通过面向连接、端到端和可靠的数据包发送。通俗说，它是事先为所发送的数据开辟出连接好的通道，然后再进行数据发送;而UDP则不为IP提供可靠性、 流控或差错恢复功能。一般来说，TCP对应的是可靠性要求高的应用，而UDP对应的则是可靠性要求低、传输经济的应用。TCP支持的应用协议主要 有：Telnet、FTP、SMTP等;UDP支持的应用层协议主要有：NFS(网络文件系统)、SNMP(简单网络管理协议)、DNS(主域名称系 统)、TFTP(通用文件传输协议)等</p><p>TCP/IP下有什么协议</p><p><img src="https://s5.51cto.com/oss/201906/17/06645dfb1e9914c032358fbc8ee2641c.jpeg" alt="太厉害了，终于有人能把TCP/IP 协议讲的明明白白了"></p><h3 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h3><p><a href="https://s1.51cto.com/oss/201906/17/1bbdd31b22e10377442b8076556a6a91.jpeg">https://s1.51cto.com/oss/201906/17/1bbdd31b22e10377442b8076556a6a91.jpeg</a></p><p>上图中的窗口内的数据即便没有收到确认应答也可以被发送出去。不过，在整个窗口的确认应答没有到达之前，如果其中部分数据出现丢包，那么发送端仍然要负责重传。为此，发送端主机需要设置缓存保留这些待被重传的数据，直到收到他们的确认应答。</p><p>在滑动窗口以外的部分包括未发送的数据以及已经确认对端已收到的数据。当数据发出后若如期收到确认应答就可以不用再进行重发，此时数据就可以从缓存区清除。</p><p>收到确认应答的情况下，将窗口滑动到确认应答中的序列号的位置。这样可以顺序地将多个段同时发送提高通信性能。这种机制也别称为滑动窗口控制。</p><h3 id="https加密过程"><a href="#https加密过程" class="headerlink" title="https加密过程"></a>https加密过程</h3><p><img src="https://pic2.zhimg.com/v2-a0d10af45e785fe8d3f5cd12f8c309f5_r.jpg" alt="preview"></p><ol><li>客户端请求服务器获取<code>证书公钥</code></li><li>客户端(SSL/TLS)解析证书（无效会弹出警告）</li><li>生成随机值</li><li>用<code>公钥加密</code>随机值生成<strong>密钥</strong></li><li>客户端将<code>秘钥</code>发送给服务器</li><li>服务端用<code>私钥</code>解密<code>秘钥</code>得到随机值</li><li><code>将信息和随机值混合在一起</code>进行对称加密</li><li>将加密的内容发送给客户端</li><li>客户端用<code>秘钥</code>解密信息</li></ol><h3 id="排序的稳定性："><a href="#排序的稳定性：" class="headerlink" title="排序的稳定性："></a>排序的稳定性：</h3><p><a href="https://baike.baidu.com/item/%E5%A0%86%E6%8E%92%E5%BA%8F">堆排序</a>、<a href="https://baike.baidu.com/item/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">快速排序</a>、<a href="https://baike.baidu.com/item/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F">希尔排序</a>、<a href="https://baike.baidu.com/item/%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F">直接选择排序</a>是不稳定的排序算法，而<a href="https://baike.baidu.com/item/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F">基数排序</a>、<a href="https://baike.baidu.com/item/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序</a>、<a href="https://baike.baidu.com/item/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">直接插入排序</a>、<a href="https://baike.baidu.com/item/%E6%8A%98%E5%8D%8A%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">折半插入排序</a>、<a href="https://baike.baidu.com/item/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F">归并排序</a>是稳定的排序算法。</p><p>首先，排序算法的稳定性大家应该都知道，通俗地讲就是能保证排序前2个相等的数其在序列的前后位置顺序和排序后它们两个的前后位置顺序相同。在简单形式化一下，如果Ai = Aj, Ai原来在位置前，排序后Ai还是要在Aj位置前。</p><p>其次，说一下稳定性的好处。排序算法如果是稳定的，那么从一个键上排序，然后再从另一个键上排序，第一个键排序的结果可以为第二个键排序所用。基数排序就 是这样，先按低位排序，逐次按高位排序，低位相同的元素其顺序再高位也相同时是不会改变的。</p><p>附加：</p><p>如何识别一个通信：源IP、目标IP、协议号、源端口号、目标端口号</p><p>UDP 常用于一下几个方面：1.包总量较少的通信（DNS、SNMP等）；2.视频、音频等多媒体通信（即时通信）；3.限定于 LAN 等特定网络中的应用通信；4.广播通信（广播、多播）。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;TCP与UDP&quot;&gt;&lt;a href=&quot;#TCP与UDP&quot; class=&quot;headerlink&quot; title=&quot;TCP与UDP&quot;&gt;&lt;/a&gt;TCP与UDP&lt;/h3&gt;&lt;p&gt;TCP (Transmission Control Protocol)和UDP(User Datag</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MyBigdataProject复习</title>
+    <link href="http://example.com/uncategorized/TechReview/mybigdataproject/"/>
+    <id>http://example.com/uncategorized/TechReview/mybigdataproject/</id>
+    <published>2021-03-16T08:17:25.175Z</published>
+    <updated>2021-03-16T08:53:50.771Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="D:\myGithub\blog\source_posts\image\bigdata-project-structure.jpg"></p><p>Kafka(flume - Spark Streaming), Sqoop(Hive - Mysql)</p><p>Flume(Nginx - data aggregation - data split to hbase and kafka) </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;D:\myGithub\blog\source_posts\image\bigdata-project-structure.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Kafka(flume - Spark Streaming), Sqoop(Hive - Mysql)&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hadoop复习</title>
+    <link href="http://example.com/uncategorized/TechReview/HDFS/"/>
+    <id>http://example.com/uncategorized/TechReview/HDFS/</id>
+    <published>2021-03-16T07:52:28.771Z</published>
+    <updated>2021-03-16T07:55:35.886Z</updated>
+    
+    <content type="html"><![CDATA[<p>client</p><p>namenode</p><p>Secondary namenode 热备份，定期合并fsimage和edits log</p><p>Datanode: block大小64M</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;client&lt;/p&gt;
+&lt;p&gt;namenode&lt;/p&gt;
+&lt;p&gt;Secondary namenode 热备份，定期合并fsimage和edits log&lt;/p&gt;
+&lt;p&gt;Datanode: block大小64M&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java Hashmap</title>
+    <link href="http://example.com/uncategorized/Computing/Java%20Hashmap/"/>
+    <id>http://example.com/uncategorized/Computing/Java%20Hashmap/</id>
+    <published>2021-03-16T06:50:52.158Z</published>
+    <updated>2021-03-16T06:53:42.976Z</updated>
+    
+    <content type="html"><![CDATA[<p>HashMap 基于 hashing 原理，我们通过 put ()和 get ()方法储存和获取对象。当我们将键值对传递给 put ()方法时，它调用键对象的 hashCode ()方法来计算 hashcode，让后找到 bucket 位置来储存值对象。当获取对象时，通过键对象的 equals ()方法找到正确的键值对，然后返回值对象。HashMap 使用 LinkedList 来解决碰撞问题，当发生碰撞了，对象将会储存在 LinkedList 的下一个节点中。 HashMap 在每个 LinkedList 节点中储存键值对对象。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;HashMap 基于 hashing 原理，我们通过 put ()和 get ()方法储存和获取对象。当我们将键值对传递给 put ()方法时，它调用键对象的 hashCode ()方法来计算 hashcode，让后找到 bucket 位置来储存值对象。当获取对象时，通过键</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux复习</title>
+    <link href="http://example.com/uncategorized/TechReview/Linux/"/>
+    <id>http://example.com/uncategorized/TechReview/Linux/</id>
+    <published>2021-03-16T06:16:15.457Z</published>
+    <updated>2021-03-16T06:50:59.184Z</updated>
+    
+    <content type="html"><![CDATA[<p>绝对路径：/etc/init.d</p><p>主目录：~/</p><p>创建文件：touch, vi</p><p>复制：cp</p><p>权限修改：chmod 777, </p><p>读、写、执行（7：0111）</p><p>读、执行（5：0101）</p><p>执行（1：0001）</p><p>查看文件内容：vi, cat, more, less(分页显示), tail, head</p><p>终端、黑洞文件：/dev/tty         /dev/null</p><p>wc：行号单词数</p><p>通配符：“?” 单个字符， “*”多个字符 [a-z]集合或单个字符</p><p>grep 用正则表达式匹配行</p><p>Linux查看进程状态：</p><p>不可中断状态，暂停状态/跟踪状态，就绪状态，运行状态，可中断睡眠状态，僵尸状态，退出状态</p><p>ps: 查看进程</p><p>搜索文件：</p><p>find whereis locate </p><p>compgen -c 打印所有支持的命令列表</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;绝对路径：/etc/init.d&lt;/p&gt;
+&lt;p&gt;主目录：~/&lt;/p&gt;
+&lt;p&gt;创建文件：touch, vi&lt;/p&gt;
+&lt;p&gt;复制：cp&lt;/p&gt;
+&lt;p&gt;权限修改：chmod 777, &lt;/p&gt;
+&lt;p&gt;读、写、执行（7：0111）&lt;/p&gt;
+&lt;p&gt;读、执行（5：0101）&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/uncategorized/TechReview/Mysql/"/>
+    <id>http://example.com/uncategorized/TechReview/Mysql/</id>
+    <published>2021-03-16T06:02:24.734Z</published>
+    <updated>2021-03-16T06:02:24.734Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper复习</title>
+    <link href="http://example.com/uncategorized/TechReview/zookeeper/"/>
+    <id>http://example.com/uncategorized/TechReview/zookeeper/</id>
+    <published>2021-03-16T04:25:03.546Z</published>
+    <updated>2021-03-16T06:13:40.638Z</updated>
+    
+    <content type="html"><![CDATA[<p>Zookeeper 是一个开放源码的分布式协调服务， 它是集群的管理者，监视着集群中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终， 将简单易用的接口和性能高效、功能稳定的系统提供给用户。提供：文件系统，通知机制。</p><p>保证了分布式一致性特征：顺序一致性，原子性， 单一视图，可靠性，实时性。</p><p>读请求 - 单一机器处理； 写请求 - 多机器达成一致后处理</p><p>ZAB协议：分布式协调服务Zookeeper 专门设计的一种支持<strong>崩溃恢复</strong>的原子<strong>广播</strong>协议。</p><h3 id="zookeeper文件系统"><a href="#zookeeper文件系统" class="headerlink" title="zookeeper文件系统"></a>zookeeper文件系统</h3><p>Zookeeper 为了保证高吞吐和低延迟， 在内存中维护了这个树状的目录结构， 这种特性使得Zookeeper 不能用于存放大量的数据， 每个节点的存放数据上限为1M。<br>多层级命名空间（znode）</p><h3 id="zookeeper-Watcher"><a href="#zookeeper-Watcher" class="headerlink" title="zookeeper Watcher"></a>zookeeper Watcher</h3><p>客户端注册watcher, 服务端处理watcher, 客户端回调watcher</p><h3 id="四种类型的数据节点znode"><a href="#四种类型的数据节点znode" class="headerlink" title="四种类型的数据节点znode:"></a>四种类型的数据节点znode:</h3><ol><li>持久节点 2. 临时节点 3. 持久顺序节点（追加顺序书行，节点名后面会追加一个由父节点维护的自增整型数字） 4.临时顺序节点</li></ol><h3 id="节点的角色与工作状态"><a href="#节点的角色与工作状态" class="headerlink" title="节点的角色与工作状态"></a>节点的角色与工作状态</h3><p><strong>角色</strong></p><p>Leader 事务请求的调度和处理，保证顺序性；内部服务调度</p><p>Follower 处理非事务请求， 投票</p><p>Observer 3.0后引入用于提升集群非事务处理能力，处理非事务请求， 不投票</p><p><strong>四种工作状态</strong></p><p>Looking: 寻找leader,进入leader选举状态<br>Following: follower<br>Leading: Leader<br>Observing: Observer</p><h3 id="ZK集群"><a href="#ZK集群" class="headerlink" title="ZK集群"></a>ZK集群</h3><p>follower宕机，两个服务器继续提供服务，半数节点正常即可继续工作<br>Leader宕机，zookeeper选举新的Leader<br>部署模式：单机，伪分布，集群<br>单机与伪分布：都是单机运行，单机模式直接用本地文件系统，伪分布式用不同java进程模拟分布式结点<br>扩容： 1. 全部重启 2. 根据过半存活原则逐个重启</p><p>zookeeper客户端：zkclient或Curator</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Zookeeper 是一个开放源码的分布式协调服务， 它是集群的管理者，监视着集群中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终， 将简单易用的接口和性能高效、功能稳定的系统提供给用户。提供：文件系统，通知机制。&lt;/p&gt;
+&lt;p&gt;保证了分布式一致性特征：顺序一致性</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kafka复习</title>
+    <link href="http://example.com/uncategorized/TechReview/Kafka/"/>
+    <id>http://example.com/uncategorized/TechReview/Kafka/</id>
+    <published>2021-03-16T03:33:54.520Z</published>
+    <updated>2021-03-16T07:33:07.892Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="D:\myGithub\blog\source_posts\image\kafka_structure.png"></p><p>Broker: 一个kafka节点，储存与转发，一个broker多个topics</p><p>Topic: 消息</p><p>offset: 消息在日志中的位置，topic在partition上的偏移量</p><p>partition: topic分区，一个topic多个partition</p><p>Zookeeper: 保存broker、topic、partition等meta数据，broker故障发现，选举leader、负载均衡</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;D:\myGithub\blog\source_posts\image\kafka_structure.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Broker: 一个kafka节点，储存与转发，一个broker多个topics&lt;/p&gt;
+&lt;p&gt;Topic: 消息&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hbase复习</title>
+    <link href="http://example.com/uncategorized/TechReview/Hbase/"/>
+    <id>http://example.com/uncategorized/TechReview/Hbase/</id>
+    <published>2021-03-16T03:33:41.307Z</published>
+    <updated>2021-03-16T07:52:35.095Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hbase 是分布式、面向列的开源数据库（其实准确的说是面向列族）。HDFS 为Hbase 提供可靠的底层数据存储服务，MapReduce 为Hbase 提供高性能的计算能力，Zookeeper 为Hbase 提供稳定服务和Failover 机制，因此我们说Hbase 是一个通过大量廉价的机器解决海量数据的高速存储和读取的分布式数据库解决方案。</p><h3 id="Column-Family"><a href="#Column-Family" class="headerlink" title="Column Family"></a>Column Family</h3><p>创建表时就可以实现数据存</p><h3 id="Rowkey"><a href="#Rowkey" class="headerlink" title="Rowkey"></a>Rowkey</h3><p>用TimeStamp来区分同一rowkey下的数据</p><p>写操作： 1. 获取RegionSever 2. 请求些Hlog 3. 请求写MemStore（之后逐渐刷入HDFS中）</p><p><img src="D:\myGithub\blog\source_posts\image\hbase-structure.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Hbase 是分布式、面向列的开源数据库（其实准确的说是面向列族）。HDFS 为Hbase 提供可靠的底层数据存储服务，MapReduce 为Hbase 提供高性能的计算能力，Zookeeper 为Hbase 提供稳定服务和Failover 机制，因此我们说Hbase 是一</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hive复习</title>
+    <link href="http://example.com/uncategorized/TechReview/Hive/"/>
+    <id>http://example.com/uncategorized/TechReview/Hive/</id>
+    <published>2021-03-16T03:21:20.614Z</published>
+    <updated>2021-03-16T16:34:43.156Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h2><p>Hive 是一个构建在 Hadoop 之上的数据仓库，它可以将结构化的数据文件映射成表，并提供类 SQL 查询功能，用于查询的 SQL 语句会被转化为 MapReduce 作业，然后提交到 Hadoop 上运行。</p><p><img src="D:\myGithub\blog\source_posts\image\hive-structure.png"></p><h3 id="Metastore"><a href="#Metastore" class="headerlink" title="Metastore"></a>Metastore</h3><p>在 Hive 中，表名、表结构、字段名、字段类型、表的分隔符等统一被称为元数据。所有的元数据默认存储在 Hive 内置的 derby 数据库中，但由于 derby 只能有一个实例，也就是说不能有多个命令行客户端同时访问，所以在实际生产环境中，通常使用 MySQL 代替 derby。</p><p>Hive 进行的是统一的元数据管理，就是说你在 Hive 上创建了一张表，然后在 presto／impala／sparksql 中都是可以直接使用的，它们会从 Metastore 中获取统一的元数据信息，同样的你在 presto／impala／sparksql 中创建一张表，在 Hive 中也可以直接使用。</p><p>skewindata, key 随机进桶</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Hive&quot;&gt;&lt;a href=&quot;#Hive&quot; class=&quot;headerlink&quot; title=&quot;Hive&quot;&gt;&lt;/a&gt;Hive&lt;/h2&gt;&lt;p&gt;Hive 是一个构建在 Hadoop 之上的数据仓库，它可以将结构化的数据文件映射成表，并提供类 SQL 查询功能，用于查询</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>进程相关</title>
+    <link href="http://example.com/uncategorized/Computing/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
+    <id>http://example.com/uncategorized/Computing/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</id>
+    <published>2021-03-15T11:44:34.877Z</published>
+    <updated>2021-03-15T13:29:23.303Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="进程间的通信方式"><a href="#进程间的通信方式" class="headerlink" title="进程间的通信方式"></a>进程间的通信方式</h2><ol><li><p>管道</p><blockquote><p> netstat -tulnp | grep 8080// 匿名管道<br> mkfifo test<br> echo “hahaha” &gt; test //命名管道<br>机制类似于缓存，进程会等待另一个进程取出数据，<strong>单向传播</strong></p></blockquote></li><li><p>消息队列<br>也类似于缓存，将数据写入内存，可以不等待取出<br>con: 数据量大很占内存</p></li><li><p>共享内存<br>两个进程共享一块虚拟内存空间，进行内存共享</p></li><li><p>信号量<br>一种计数器，类似于锁</p></li><li><p>socket<br>两台主机远程通信</p></li></ol><h2 id="进程（process）与线程（thread）"><a href="#进程（process）与线程（thread）" class="headerlink" title="进程（process）与线程（thread）"></a>进程（process）与线程（thread）</h2><p>工厂：CPU<br>进程： 车间<br>线程： 工人<br>工厂共享空间: 内存<br>给内存的锁：互斥锁（Mutex），防止多线程读写同一内存<br>可以限制线程数量,在门口挂n把钥匙：信号量（Semaphore）</p><h2 id="操作系统设计"><a href="#操作系统设计" class="headerlink" title="操作系统设计"></a>操作系统设计</h2><ul><li>多进程 – 多任务</li><li>多线程 – 单任务多线程</li><li>协调机制，防止线程与线程，进程与进程冲突，运行共享资源</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;进程间的通信方式&quot;&gt;&lt;a href=&quot;#进程间的通信方式&quot; class=&quot;headerlink&quot; title=&quot;进程间的通信方式&quot;&gt;&lt;/a&gt;进程间的通信方式&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;管道&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; netstat -tuln</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TCP三次握手四次挥手</title>
+    <link href="http://example.com/uncategorized/Computing/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/"/>
+    <id>http://example.com/uncategorized/Computing/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</id>
+    <published>2021-03-15T07:33:11.989Z</published>
+    <updated>2021-03-15T08:25:35.697Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手"></a>TCP三次握手</h2><p>刚开始客户端处于 closed 的状态，服务端处于 listen 状态。</p><p><strong>第一次握手</strong>：建立连接时，客户端发送syn包（syn=j）[j 是 Client初始化序列号]到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号（Synchronize Sequence Numbers）。</p><p><strong>第二次握手</strong>：服务器收到syn包，必须确认客户的SYN, 准备ACK报文（ack=j+1），同时自己也发送一个SYN包（syn=k）[k 是 Server 的初始化序列号]，即SYN+ACK包，此时服务器进入SYN_RECV状态；</p><p><strong>第三次握手</strong>：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=k+1），此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态，完成三次握手</p><h3 id="三次握手目的"><a href="#三次握手目的" class="headerlink" title="三次握手目的"></a>三次握手目的</h3><ul><li>确认双方的接收与发送能力是否正常。</li><li>指定初始化序列号</li><li>为https做准备</li></ul><blockquote><p>这里我顺便解释一下为啥只有三次握手才能确认双方的接受与发送能力是否正常，而两次却不可以：<br>第一次握手：客户端发送网络包，服务端收到了。服务端：客户端的发送能力、服务端的接收能力是正常的。<br>第二次握手：服务端发包，客户端收到了。客户端：服务端的接收、发送能力，客户端的接收、发送能力是正常的。<br>第三次握手：客户端发包，服务端收到了。服务端：客户端的接收、发送能力正常，服务器自己的发送、接收能力也正常。</p></blockquote><h3 id="其他考点"><a href="#其他考点" class="headerlink" title="其他考点"></a>其他考点</h3><p>ISN是动态生成的，防止攻击者猜出确认号</p><p>半连接队列：服务器第一次收到客户端的 SYN 之后，就会处于 SYN_RCVD 状态，此时双方还没有完全建立其连接，服务器会把此种状态下请求连接放在一个队列里，我们把这种队列称之为<strong>半连接队列</strong>。当然还有一个<strong>全连接队列</strong>，就是已经完成三次握手，建立起连接的就会放在全连接队列中。如果队列满了就有可能会出现丢包现象。</p><h2 id="TCP四次挥手"><a href="#TCP四次挥手" class="headerlink" title="TCP四次挥手"></a>TCP四次挥手</h2><p>刚开始双方都处于 establised 状态，假如是客户端先发起关闭请求，则：</p><p>第一次挥手：客户端发送一个 FIN 报文，报文中会指定一个序列号。此时客户端处于<strong>FIN_WAIT1</strong>状态。</p><p>第二次握手(先发ACK)：服务端收到 FIN 之后，会发送 ACK 报文，且把客户端的序列号值 + 1 作为 ACK 报文的序列号值，表明已经收到客户端的报文了，此时服务端处于 <strong>CLOSE_WAIT</strong>状态。</p><p>第三次挥手(再发FIN)：如果服务端也想断开连接了，和客户端的第一次挥手一样，发给 FIN 报文，且指定一个序列号。此时服务端处于 <strong>LAST_ACK</strong> 的状态。</p><p>第四次挥手：客户端收到 FIN 之后，一样发送一个 ACK 报文作为应答，且把服务端的序列号值 + 1 作为自己 ACK 报文的序列号值，此时客户端处于 <strong>TIME_WAIT</strong> 状态。需要过一阵子以确保服务端收到自己的 ACK 报文之后才会进入 CLOSED 状态</p><p>服务端收到 ACK 报文之后，就处于关闭连接了，处于 CLOSED 状态。</p><p>考点：</p><p>为什么客户端发送 ACK 之后不直接关闭，而是要等一阵子才关闭。这其中的原因就是，要确保服务器是否已经收到了我们的 ACK 报文，如果没有收到的话，服务器会重新发 FIN 报文给客户端，客户端再次收到 FIN 报文之后，就知道之前的 ACK 报文丢失了，然后再次发送 ACK 报文。</p><p>至于 TIME_WAIT 持续的时间至少是一个报文的来回时间(2MSL)。一般会设置一个计时，如果过了这个计时没有再次收到 FIN 报文，则代表对方成功就是 ACK 报文，此时处于 CLOSED 状态。</p><p>Source:<br><a href="https://blog.csdn.net/qq_18425655/article/details/52163228">https://blog.csdn.net/qq_18425655/article/details/52163228</a><br><a href="https://juejin.cn/post/6844903834708344840#heading-0">https://juejin.cn/post/6844903834708344840#heading-0</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;TCP三次握手&quot;&gt;&lt;a href=&quot;#TCP三次握手&quot; class=&quot;headerlink&quot; title=&quot;TCP三次握手&quot;&gt;&lt;/a&gt;TCP三次握手&lt;/h2&gt;&lt;p&gt;刚开始客户端处于 closed 的状态，服务端处于 listen 状态。&lt;/p&gt;
+&lt;p&gt;&lt;stron</summary>
+      
     
     
     
@@ -52,9 +305,9 @@
     <link href="http://example.com/uncategorized/Study/CS5331%20Web%20Security/"/>
     <id>http://example.com/uncategorized/Study/CS5331%20Web%20Security/</id>
     <published>2021-02-26T05:52:46.348Z</published>
-    <updated>2021-03-15T07:38:28.348Z</updated>
+    <updated>2021-03-16T11:22:47.758Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Lecture-2-Network-level-attacks"><a href="#Lecture-2-Network-level-attacks" class="headerlink" title="Lecture 2: Network-level attacks"></a>Lecture 2: Network-level attacks</h2><h3 id="Defeating-HTTPS-2"><a href="#Defeating-HTTPS-2" class="headerlink" title="Defeating HTTPS[2*]"></a>Defeating HTTPS[2*]</h3><p><strong>Https Downgrade</strong> : insert http links in the web page</p><p>Defense of  https downgrade: HTTP Strict Transport Security(HSTS)</p><p>Idea: supplies a header over HTTPS</p><p><strong>User coopting &amp; caching flaws</strong>: images and icons contains the tricks to coopting users to click-through</p><p><strong>Mixed content</strong>(mixture of https links and http link)</p><p>Passive mixed content: doesn’t interact with the rest of the page</p><p>Active mixed content: interacts with the page</p><p>Defense: use “protocol-relative URLs”, use content security policy (CSP) </p><h3 id="CA-compromise-2"><a href="#CA-compromise-2" class="headerlink" title="CA compromise[2*]"></a>CA compromise[2*]</h3><p>weak browser trust model and added root CAs by system providers</p><p>Defense: Certificate Revocation (证书吊销) support by CRL and OCSP</p><p>Certificate Pinning(证书锁定) 在应用中锁定目标域的资源，不信任root CA</p><p>Certificate Transparency(证书透明度) </p><p>Component: 1）Certificate Logs；2）Certificate Monitors；3）Certificate Auditors</p><h3 id="Other-Attack-1"><a href="#Other-Attack-1" class="headerlink" title="Other Attack[1*]"></a>Other Attack[1*]</h3><p><strong>DNS attack</strong></p><ol><li>modify in-transit DNS response</li><li>find software vulnerabilities in DNS software</li><li>change the Query ID to give wrong response</li></ol><p><strong>Secure Channels</strong>: Defense against network attacks</p><p>SSL + HTTP = HTTPS (TSL is the revolution of SSL)</p><p>HTTPS session: 1. ciphers negotiation 2. AKE(Authenticated Key Exchange) 3. Symmetric Key Encryption</p><p>Chain of certificates: Root CAs(baked in your browser): can designate intermediate CA.</p><h2 id="Lecture-3-Session-Attack"><a href="#Lecture-3-Session-Attack" class="headerlink" title="Lecture 3: Session Attack"></a>Lecture 3: Session Attack</h2><p><img src="https://pic2.zhimg.com/v2-a0d10af45e785fe8d3f5cd12f8c309f5_b.jpg" alt="img"></p><h3 id="Cookies-Session-Cloning-Session-Riding-CSRF-3"><a href="#Cookies-Session-Cloning-Session-Riding-CSRF-3" class="headerlink" title="Cookies, Session Cloning, Session Riding/ CSRF[3*]"></a>Cookies, Session Cloning, Session Riding/ CSRF[3*]</h3><p><strong>HTTP</strong>: Stateless Protocol(maintains no information about the connection)</p><p><strong>Session ID</strong> is states on the client side: 1. URL parameter 2. Hidden HTML 3. COOKIES</p><p><strong>Cookie</strong> contains whatever the server puts in</p><p>persistent cookies(file system, store in a database) and non-persistent cookie(browser memory)</p><p>Usage: user authentication, personalization, user tracking</p><p>depend on: domain/path, but can access belonging to same domain</p><p><strong>Cookie Authentication</strong></p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227163851245.png" alt="image-20210227163851245" style="zoom: 50%;" /><p><strong>Session Cloning:</strong> Change the session id in the cookies</p><p>Attack methods: edit cookies in local file system, 2) change cookie in browser memory 3) Browser itself can be malicious 4) network-level web manipulation proxy</p><p>Defense: using input validation ensure the integrity of state data 2) digitally sign or hash the variable 3) encrypt information in the URL and cookie 4) Long and random session ID 5) Dynamic session ID</p><p><strong>Session Riding</strong></p><p>CSRF(cross-site request forgery) a malicious site forge a stealthy request with GET or POST method</p><p>Basic CSRF(“session riding”) Login CSRF(“session feeding”, login into attack’s account and do the things) Router-Targeting CSRF</p><p>Defense: Make sure the request’s source(<strong>HTTP Referrer Validation</strong> check referrer header, <strong>Secret Validation Tokens</strong> use a random number in all steps of a transaction, <strong>Same-Site Cookie</strong>: prevent browser from sending the cookie along with cross-site{有点忘了!!!!}) </p><p>Graphical Turing test(图形验证码)</p><h3 id="Third-party-cookies-2"><a href="#Third-party-cookies-2" class="headerlink" title="Third-party cookies[2*]"></a>Third-party cookies[2*]</h3><p>e.g. send a image from doubleclick.com to track people</p><h3 id="Same-Origin-Policy-2"><a href="#Same-Origin-Policy-2" class="headerlink" title="Same Origin Policy[2*]"></a>Same Origin Policy[2*]</h3><p>scripts from one origin can only access objects or services from the same origin</p><p>Principals: website, the owner of script</p><p>Resources: Cookies, Display, Network communication</p><p>Intuitive access control: Object and services</p><p>How to define origin: protocol, host and port.(only all same can access the resources)</p><p>PostMessage(): cross-frame communication channels</p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227195505720.png" alt="image-20210227195505720" style="zoom:30%;" /><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227195523667.png" alt="image-20210227195523667" style="zoom:30%;" /><p>Relaxing SOP: orders.company.com/catalog.company.com use domain lowering using <em>document.domain</em></p><p>Cross-Origin Resource Sharing: Certain cross-domain network request are forbidden like Ajax but allows origin B to give permission to origin A.</p><h3 id="Cross-site-Scripting-3"><a href="#Cross-site-Scripting-3" class="headerlink" title="Cross-site Scripting[3*]"></a>Cross-site Scripting[3*]</h3><p><strong>Web Attacker</strong>: Owns a valid domain, server with an SSL certificate</p><p><strong>XSS</strong>: Vulnerability of web application, failure in detecting scripts in inputs</p><p>**type1:**Reflected XSS: change the parameters with crafted URL to the web application, and web application returns pages including malicious script</p><p><strong>type2:</strong> Persistent XSS: use storage to the parser</p><p><strong>type3:</strong> DOM-based XSS: html script in website DOM generate the attack,the browser generate the malicious code</p><p><strong>type3a:</strong> Mutation XSS[not required]</p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227204503257.png" alt="image-20210227204503257" style="zoom:50%;" /><p>? will send to server and # will not</p><p><strong>Defeat</strong>: 1) Input validation/filtering 2) Input sanitization/escaping/encoding 3) use of more specific API</p><ol><li><p>Blacklisting and Whitelisting</p></li><li><p>Input Sanitization: use HTML encoding to prevent reflected XSS | Browser-side Filtering | Do matching after parsing</p></li><li><p>use of a more specific and less powerful JavaScript API</p></li><li><p>Other: use CSP; make cookies inaccessible to scripts</p></li></ol><h3 id="CSP-1"><a href="#CSP-1" class="headerlink" title="CSP[1*]"></a>CSP[1*]</h3><p>an HTTP header, provides a whitelist of sources of trusted content, instruct the browser to only execute specific resources</p><h2 id="Lecture-4-Server-side-Injection-Attacks"><a href="#Lecture-4-Server-side-Injection-Attacks" class="headerlink" title="Lecture 4: Server-side Injection Attacks"></a>Lecture 4: Server-side Injection Attacks</h2><h3 id="SQL-Injection-2"><a href="#SQL-Injection-2" class="headerlink" title="SQL Injection[2*]"></a>SQL Injection[2*]</h3><p>Three tier architecture: Client-&gt;Application Server-&gt;Database Server</p><p><strong>common pattern</strong> create SQL statement as strings, sends the statements to DB Server</p><p>SELECT * FROM user_data WHERE user_id = 0 OR 1=1 </p><p><strong>Prepared Statements</strong>: less powerful API: only run what you want, properly separates control and data channel</p><p><strong>Other Defenses</strong>: use the proper query invocation function,randomize database schema, use principle of least privilege(only select, no insert/update/drop permission)</p><h3 id="Command-Injection-3"><a href="#Command-Injection-3" class="headerlink" title="Command Injection[3*]"></a>Command Injection[3*]</h3><p>Most common <strong>attack goals</strong>: Dump server’s password file, add an admin user</p><p><strong>Defense</strong>: 1. apply input validation by using a whitelist, 2. apply input escaping: add single quotes around a string, 3. use a less powerful and more specific API </p><h2 id="Lecture-5-Attacks-in-the-Application-logic"><a href="#Lecture-5-Attacks-in-the-Application-logic" class="headerlink" title="Lecture 5: Attacks in the Application logic"></a><strong>Lecture 5</strong>: Attacks in the Application logic</h2><h3 id="HTTP-Parameter-Pollution-HTTP-Parameter-Tampering-HTTP-Header-Injection-3"><a href="#HTTP-Parameter-Pollution-HTTP-Parameter-Tampering-HTTP-Header-Injection-3" class="headerlink" title="HTTP Parameter Pollution, HTTP Parameter Tampering, HTTP Header Injection[3*]"></a>HTTP Parameter Pollution, HTTP Parameter Tampering, HTTP Header Injection[3*]</h3><p>A malicious web user craft inputs</p><p>HPP: use more parameter in the URL;</p><p>HPT: validation bypassed and quantity be set as -4</p><p>Defense: Sanitize on the server; don’t trust all received HTTP, never place security-critical validation on the client</p><p>HHI:  modify parameters in the response(X-XSS-Protection, SID)</p><h3 id="File-upload-vulnerability-1"><a href="#File-upload-vulnerability-1" class="headerlink" title="File upload vulnerability[1*]"></a>File upload vulnerability[1*]</h3><p>Use MIME-type validation, this type can be set by web clients via Content-Type header</p><p>Upload php files to do web-shell command and enable remote administration</p><p>Validating images using PHP’s getimagesize()</p><p>Other bad defense: blacklist bad file extensions</p><p>Good defense: whitelisting; Using a less powerful operation; Principle of least privilege; Isolation(Host on separate subdomain); Security by obscurity</p><h3 id="File-inclusion-vulnerability-2"><a href="#File-inclusion-vulnerability-2" class="headerlink" title="File inclusion vulnerability[2*]"></a>File inclusion vulnerability[2*]</h3><p>PHP include() and require()</p><p>take all the text/code/markup exist in the specified file and copies it into the file that uses the include statement</p><p>include: produce warning, require(): produce fatal error</p><p><strong>Remote File Inclusion</strong>: include and require can accept a remote file path</p><p><strong>Local File Inclusion:</strong> from the local current server</p><p><strong>Defense</strong> </p><p>Both: avoid dynamically including files based on user input, maintain whitelist</p><p>Specific to RFI: disable allow_url_include|allow_url_fopen OFF</p><h3 id="Access-control-and-logic-bugs-1"><a href="#Access-control-and-logic-bugs-1" class="headerlink" title="Access control and logic bugs[1*]"></a>Access control and logic bugs[1*]</h3><p>user should no access control to user_add.php</p><p>Check is done at the app’s entry point: index.php</p><p>Other types: unprotected access(/admin)/ static file(123.pdf)/ parameter-based access control(admin = true)</p><p>Directory Traversal(Dot-Dot-Slash)</p><h2 id="Lecture-6-Web-Authorization"><a href="#Lecture-6-Web-Authorization" class="headerlink" title="Lecture 6: Web Authorization"></a>Lecture 6: Web Authorization</h2><p>web authentication: verifying is indeed; web authorization: decide user’s access resources</p><p>SSO login once and authenticate everywhere</p><h3 id="Kerberos-1"><a href="#Kerberos-1" class="headerlink" title="Kerberos[1*]"></a>Kerberos[1*]</h3><ol><li>user login session 2) type of service 3) service session</li></ol><p>web SSO: Identity provider(IDP), service provider(SP)</p><h3 id="Open-ID-OAuth-2"><a href="#Open-ID-OAuth-2" class="headerlink" title="Open ID OAuth[2*]"></a>Open ID OAuth[2*]</h3><p><strong>OpenID</strong> is open standard Entities: User, ID Provider, Web Application</p><p>Security Problems: Authentication Bugs(unauthorized parties log into victims’ account on the RP)</p><p>Privacy and trust issues: IDP has log of OpenID logins</p><p>Phishing: forward the user to a page asking user input their credentials</p><p>provide a service of assertion of identity</p><p><strong>OAuth:</strong> open standard for access delegation</p><p>allow <strong>access tokens</strong> to be issued to third-party clients</p><p><strong>Scopes</strong>: the authorization screen request permission screen[Scope to allow|deny]</p><p>an authorization protocol</p><p><strong>Weakness</strong>????</p><h3 id="SAML-1"><a href="#SAML-1" class="headerlink" title="SAML[1*]"></a>SAML[1*]</h3><p>Open standard for exchanging authentication and authorization data between parties(between IDP and RP/SP)</p><p>XML-based makeup language</p><h3 id="Web-SSO-Security-Problems-3"><a href="#Web-SSO-Security-Problems-3" class="headerlink" title="Web SSO Security Problems[3*]"></a>Web SSO Security Problems[3*]</h3><p>authorization: OAuth; authentication: OpenID (latest OpenID Connect runs on top of OAuth)</p><p>vulnerabilities: web user, IDP, SP not belong to the same organization; SSO operates on an open public network; runs on top of web and browser</p><p>Secret Token Leakage: transmitted through unencrypted channels</p><p>postmessage</p><h2 id="Lecture-7"><a href="#Lecture-7" class="headerlink" title="Lecture 7:"></a>Lecture 7:</h2><p>Some phishing attacks: homograph attack, picture-in-picture attack</p><p>Defense: user education, browser defenses, international domain name in the URL bar.</p><h3 id="Clickjacking"><a href="#Clickjacking" class="headerlink" title="Clickjacking"></a>Clickjacking</h3><p>iframe and screen access</p><p>Frame can overlap: outer iframe can create another overlapping iframe positioned over an embedded iframe</p><p>or use partial overlays</p><p>Timing attack: bait the user to perfrom a double-click then switch focus to popup window</p><h3 id="Copy-Paste-XSS"><a href="#Copy-Paste-XSS" class="headerlink" title="Copy-Paste XSS"></a>Copy-Paste XSS</h3><p>Self-XSS coercing users to copy-and-paste into the browser</p><p>Password cracking: shouldn’t be stored in plaintext, Defense: Hash</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Lecture-2-Network-level-attacks"><a href="#Lecture-2-Network-level-attacks" class="headerlink" title="Lecture 2: Network-level attacks"></a>Lecture 2: Network-level attacks</h2><h3 id="Defeating-HTTPS-2"><a href="#Defeating-HTTPS-2" class="headerlink" title="Defeating HTTPS[2*]"></a>Defeating HTTPS[2*]</h3><p><strong>Https Downgrade</strong> : insert http links in the web page</p><p>Defense of  https downgrade: HTTP Strict Transport Security(HSTS)</p><p>Idea: supplies a header over HTTPS</p><p><strong>User coopting &amp; caching flaws</strong>: images and icons contains the tricks to coopting users to click-through</p><p><strong>Mixed content</strong>(mixture of https links and http link)</p><p>Passive mixed content: doesn’t interact with the rest of the page</p><p>Active mixed content: interacts with the page</p><p>Defense: use “protocol-relative URLs”, use content security policy (CSP) </p><h3 id="CA-compromise-2"><a href="#CA-compromise-2" class="headerlink" title="CA compromise[2*]"></a>CA compromise[2*]</h3><p>weak browser trust model and added root CAs by system providers</p><p>Defense: Certificate Revocation (证书吊销) support by CRL and OCSP</p><p>Certificate Pinning(证书锁定) 在应用中锁定目标域的资源，不信任root CA</p><p>Certificate Transparency(证书透明度) </p><p>Component: 1）Certificate Logs；2）Certificate Monitors；3）Certificate Auditors</p><h3 id="Other-Attack-1"><a href="#Other-Attack-1" class="headerlink" title="Other Attack[1*]"></a>Other Attack[1*]</h3><p><strong>DNS attack</strong></p><ol><li>modify in-transit DNS response</li><li>find software vulnerabilities in DNS software</li><li>change the Query ID to give wrong response</li></ol><p><strong>Secure Channels</strong>: Defense against network attacks</p><p>SSL + HTTP = HTTPS (TSL is the revolution of SSL)</p><p>HTTPS session: 1. ciphers negotiation 2. AKE(Authenticated Key Exchange) 3. Symmetric Key Encryption</p><p>Chain of certificates: Root CAs(baked in your browser): can designate intermediate CA.</p><h2 id="Lecture-3-Session-Attack"><a href="#Lecture-3-Session-Attack" class="headerlink" title="Lecture 3: Session Attack"></a>Lecture 3: Session Attack</h2><p><img src="https://pic2.zhimg.com/v2-a0d10af45e785fe8d3f5cd12f8c309f5_b.jpg" alt="img"></p><h3 id="Cookies-Session-Cloning-Session-Riding-CSRF-3"><a href="#Cookies-Session-Cloning-Session-Riding-CSRF-3" class="headerlink" title="Cookies, Session Cloning, Session Riding/ CSRF[3*]"></a>Cookies, Session Cloning, Session Riding/ CSRF[3*]</h3><p><strong>HTTP</strong>: Stateless Protocol(maintains no information about the connection)</p><p><strong>Session ID</strong> is states on the client side: 1. URL parameter 2. Hidden HTML 3. COOKIES</p><p><strong>Cookie</strong> contains whatever the server puts in</p><p>persistent cookies(file system, store in a database) and non-persistent cookie(browser memory)</p><p>Usage: user authentication, personalization, user tracking</p><p>depend on: domain/path, but can access belonging to same domain</p><p><strong>Cookie Authentication</strong></p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227163851245.png" alt="image-20210227163851245" style="zoom: 50%;" /><p><strong>Session Cloning:</strong> Change the session id in the cookies</p><p>Attack methods: edit cookies in local file system, 2) change cookie in browser memory 3) Browser itself can be malicious 4) network-level web manipulation proxy</p><p>Defense: using input validation ensure the integrity of state data 2) digitally sign or hash the variable 3) encrypt information in the URL and cookie 4) Long and random session ID 5) Dynamic session ID</p><p><strong>Session Riding</strong></p><p>CSRF(cross-site request forgery) a malicious site forge a stealthy request with GET or POST method</p><p>Basic CSRF(“session riding”) Login CSRF(“session feeding”, login into attack’s account and do the things) Router-Targeting CSRF</p><p>Defense: Make sure the request’s source(<strong>HTTP Referrer Validation</strong> check referrer header, <strong>Secret Validation Tokens</strong> use a random number in all steps of a transaction, <strong>Same-Site Cookie</strong>: prevent browser from sending the cookie along with cross-site{有点忘了!!!!}) </p><p>Graphical Turing test(图形验证码)</p><h3 id="Third-party-cookies-2"><a href="#Third-party-cookies-2" class="headerlink" title="Third-party cookies[2*]"></a>Third-party cookies[2*]</h3><p>e.g. send a image from doubleclick.com to track people</p><h3 id="Same-Origin-Policy-2"><a href="#Same-Origin-Policy-2" class="headerlink" title="Same Origin Policy[2*]"></a>Same Origin Policy[2*]</h3><p>scripts from one origin can only access objects or services from the same origin</p><p>Principals: website, the owner of script</p><p>Resources: Cookies, Display, Network communication</p><p>Intuitive access control: Object and services</p><p>How to define origin: protocol, host and port.(only all same can access the resources)</p><p>PostMessage(): cross-frame communication channels</p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227195505720.png" alt="image-20210227195505720" style="zoom:30%;" /><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227195523667.png" alt="image-20210227195523667" style="zoom:30%;" /><p>Relaxing SOP: orders.company.com/catalog.company.com use domain lowering using <em>document.domain</em></p><p>Cross-Origin Resource Sharing: Certain cross-domain network request are forbidden like Ajax but allows origin B to give permission to origin A.</p><h3 id="Cross-site-Scripting-3"><a href="#Cross-site-Scripting-3" class="headerlink" title="Cross-site Scripting[3*]"></a>Cross-site Scripting[3*]</h3><p><strong>Web Attacker</strong>: Owns a valid domain, server with an SSL certificate</p><p><strong>XSS</strong>: Vulnerability of web application, failure in detecting scripts in inputs</p><p>**type1:**Reflected XSS: change the parameters with crafted URL to the web application, and web application returns pages including malicious script</p><p><strong>type2:</strong> Persistent XSS: use storage to the parser</p><p><strong>type3:</strong> DOM-based XSS: html script in website DOM generate the attack,the browser generate the malicious code</p><p><strong>type3a:</strong> Mutation XSS[not required]</p><img src="C:\Users\Charlas xia\AppData\Roaming\Typora\typora-user-images\image-20210227204503257.png" alt="image-20210227204503257" style="zoom:50%;" /><p>? will send to server and # will not</p><p><strong>Defeat</strong>: 1) Input validation/filtering 2) Input sanitization/escaping/encoding 3) use of more specific API</p><ol><li><p>Blacklisting and Whitelisting</p></li><li><p>Input Sanitization: use HTML encoding to prevent reflected XSS | Browser-side Filtering | Do matching after parsing</p></li><li><p>use of a more specific and less powerful JavaScript API</p></li><li><p>Other: use CSP; make cookies inaccessible to scripts</p></li></ol><h3 id="CSP-1"><a href="#CSP-1" class="headerlink" title="CSP[1*]"></a>CSP[1*]</h3><p>an HTTP header, provides a whitelist of sources of trusted content, instruct the browser to only execute specific resources</p><h2 id="Lecture-4-Server-side-Injection-Attacks"><a href="#Lecture-4-Server-side-Injection-Attacks" class="headerlink" title="Lecture 4: Server-side Injection Attacks"></a>Lecture 4: Server-side Injection Attacks</h2><h3 id="SQL-Injection-2"><a href="#SQL-Injection-2" class="headerlink" title="SQL Injection[2*]"></a>SQL Injection[2*]</h3><p>Three tier architecture: Client-&gt;Application Server-&gt;Database Server</p><p><strong>common pattern</strong> create SQL statement as strings, sends the statements to DB Server</p><p>SELECT * FROM user_data WHERE user_id = 0 OR 1=1 </p><p><strong>Prepared Statements</strong>: less powerful API: only run what you want, properly separates control and data channel</p><p><strong>Other Defenses</strong>: use the proper query invocation function,randomize database schema, use principle of least privilege(only select, no insert/update/drop permission)</p><h3 id="Command-Injection-3"><a href="#Command-Injection-3" class="headerlink" title="Command Injection[3*]"></a>Command Injection[3*]</h3><p>Most common <strong>attack goals</strong>: Dump server’s password file, add an admin user</p><p><strong>Defense</strong>: 1. apply input validation by using a whitelist, 2. apply input escaping: add single quotes around a string, 3. use a less powerful and more specific API </p><h2 id="Lecture-5-Attacks-in-the-Application-logic"><a href="#Lecture-5-Attacks-in-the-Application-logic" class="headerlink" title="Lecture 5: Attacks in the Application logic"></a><strong>Lecture 5</strong>: Attacks in the Application logic</h2><h3 id="HTTP-Parameter-Pollution-HTTP-Parameter-Tampering-HTTP-Header-Injection-3"><a href="#HTTP-Parameter-Pollution-HTTP-Parameter-Tampering-HTTP-Header-Injection-3" class="headerlink" title="HTTP Parameter Pollution, HTTP Parameter Tampering, HTTP Header Injection[3*]"></a>HTTP Parameter Pollution, HTTP Parameter Tampering, HTTP Header Injection[3*]</h3><p>A malicious web user craft inputs</p><p>HPP: use more parameter in the URL;</p><p>HPT: validation bypassed and quantity be set as -4</p><p>Defense: Sanitize on the server; don’t trust all received HTTP, never place security-critical validation on the client</p><p>HHI:  modify parameters in the response(X-XSS-Protection, SID)</p><h3 id="File-upload-vulnerability-1"><a href="#File-upload-vulnerability-1" class="headerlink" title="File upload vulnerability[1*]"></a>File upload vulnerability[1*]</h3><p>Use MIME-type validation, this type can be set by web clients via Content-Type header</p><p>Upload php files to do web-shell command and enable remote administration</p><p>Validating images using PHP’s getimagesize()</p><p>Other bad defense: blacklist bad file extensions</p><p>Good defense: whitelisting; Using a less powerful operation; Principle of least privilege; Isolation(Host on separate subdomain); Security by obscurity</p><h3 id="File-inclusion-vulnerability-2"><a href="#File-inclusion-vulnerability-2" class="headerlink" title="File inclusion vulnerability[2*]"></a>File inclusion vulnerability[2*]</h3><p>PHP include() and require()</p><p>take all the text/code/markup exist in the specified file and copies it into the file that uses the include statement</p><p>include: produce warning, require(): produce fatal error</p><p><strong>Remote File Inclusion</strong>: include and require can accept a remote file path</p><p><strong>Local File Inclusion:</strong> from the local current server</p><p><strong>Defense</strong> </p><p>Both: avoid dynamically including files based on user input, maintain whitelist</p><p>Specific to RFI: disable allow_url_include|allow_url_fopen OFF</p><h3 id="Access-control-and-logic-bugs-1"><a href="#Access-control-and-logic-bugs-1" class="headerlink" title="Access control and logic bugs[1*]"></a>Access control and logic bugs[1*]</h3><p>user should no access control to user_add.php</p><p>Check is done at the app’s entry point: index.php</p><p>Other types: unprotected access(/admin)/ static file(123.pdf)/ parameter-based access control(admin = true)</p><p>Directory Traversal(Dot-Dot-Slash)</p><h2 id="Lecture-6-Web-Authorization"><a href="#Lecture-6-Web-Authorization" class="headerlink" title="Lecture 6: Web Authorization"></a>Lecture 6: Web Authorization</h2><p>web authentication: verifying is indeed; web authorization: decide user’s access resources</p><p>SSO login once and authenticate everywhere</p><h3 id="Kerberos-1"><a href="#Kerberos-1" class="headerlink" title="Kerberos[1*]"></a>Kerberos[1*]</h3><ol><li>user login session 2) type of service 3) service session</li></ol><p>web SSO: Identity provider(IDP), service provider(SP)</p><h3 id="Open-ID-OAuth-2"><a href="#Open-ID-OAuth-2" class="headerlink" title="Open ID OAuth[2*]"></a>Open ID OAuth[2*]</h3><p><strong>OpenID</strong> is open standard Entities: User, ID Provider, Web Application</p><p>Security Problems: Authentication Bugs(unauthorized parties log into victims’ account on the RP)</p><p>Privacy and trust issues: IDP has log of OpenID logins</p><p>Phishing: forward the user to a page asking user input their credentials</p><p>provide a service of assertion of identity</p><p><strong>OAuth:</strong> open standard for access delegation</p><p>allow <strong>access tokens</strong> to be issued to third-party clients</p><p><strong>Scopes</strong>: the authorization screen request permission screen[Scope to allow|deny]</p><p>an authorization protocol</p><p><strong>Weakness</strong>????</p><h3 id="SAML-1"><a href="#SAML-1" class="headerlink" title="SAML[1*]"></a>SAML[1*]</h3><p>Open standard for exchanging authentication and authorization data between parties(between IDP and RP/SP)</p><p>XML-based makeup language</p><h3 id="Web-SSO-Security-Problems-3"><a href="#Web-SSO-Security-Problems-3" class="headerlink" title="Web SSO Security Problems[3*]"></a>Web SSO Security Problems[3*]</h3><p>authorization: OAuth; authentication: OpenID (latest OpenID Connect runs on top of OAuth)</p><p>vulnerabilities: web user, IDP, SP not belong to the same organization; SSO operates on an open public network; runs on top of web and browser</p><p>Secret Token Leakage: transmitted through unencrypted channels</p><p>postmessage</p><h2 id="Lecture-7"><a href="#Lecture-7" class="headerlink" title="Lecture 7:"></a>Lecture 7:</h2><p>Some phishing attacks: homograph attack, picture-in-picture attack</p><p>Defense: user education, browser defenses, international domain name in the URL bar.</p><h3 id="Clickjacking"><a href="#Clickjacking" class="headerlink" title="Clickjacking"></a>Clickjacking</h3><p>iframe and screen access</p><p>Frame can overlap: outer iframe can create another overlapping iframe positioned over an embedded iframe</p><p>or use partial overlays</p><p>Timing attack: bait the user to perfrom a double-click then switch focus to popup window</p><h3 id="Copy-Paste-XSS"><a href="#Copy-Paste-XSS" class="headerlink" title="Copy-Paste XSS"></a>Copy-Paste XSS</h3><p>Self-XSS coercing users to copy-and-paste into the browser</p><p>Password cracking: shouldn’t be stored in plaintext, Defense: Hash</p><h2 id="Lecture-8-Browser-security"><a href="#Lecture-8-Browser-security" class="headerlink" title="Lecture 8: Browser security"></a>Lecture 8: Browser security</h2><p>Component view of browser and OS is similar</p><p>Authorities: web origin(protocol, host, port), PKI entities<br>Browser isolate web site from each other<br>app installation, browser sandbox makes sure websites will not affect local system</p>]]></content>
     
     
       
