@@ -2,14 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/uncategorized/Jobs/tencent2/</loc>
+    <loc>http://example.com/interview/Jobs/tencent2/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/interview/Jobs/tencent1/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/interview/Jobs/intersting_question/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Computing/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/network/Computing/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/network/Computing/proxy/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/Java/Computing/Java%20Hashmap/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/Java/Computing/Java%20compator/</loc>
+    
+    <lastmod>2021-03-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/uncategorized/Study/ST5227%20Applied%20Data%20Mining/</loc>
     
     <lastmod>2021-03-18</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/Jobs/tencent1/</loc>
+    <loc>http://example.com/uncategorized/Study/CS5332%20Biometric%20Authentication/</loc>
     
     <lastmod>2021-03-18</lastmod>
     
@@ -58,13 +114,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/Computing/Java%20Hashmap/</loc>
-    
-    <lastmod>2021-03-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/TechReview/Linux/</loc>
     
     <lastmod>2021-03-16</lastmod>
@@ -86,35 +135,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/Computing/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</loc>
-    
-    <lastmod>2021-03-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/Computing/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</loc>
-    
-    <lastmod>2021-03-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/Computing/Java%20compator/</loc>
-    
-    <lastmod>2021-03-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/Study/5%%20theory/</loc>
-    
-    <lastmod>2021-03-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/uncategorized/Computing/proxy/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
@@ -144,12 +165,40 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-03-18</lastmod>
+    <lastmod>2021-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
 
+  
+  <url>
+    <loc>http://example.com/categories/Java/</loc>
+    <lastmod>2021-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/network/</loc>
+    <lastmod>2021-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2021-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/interview/</loc>
+    <lastmod>2021-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
