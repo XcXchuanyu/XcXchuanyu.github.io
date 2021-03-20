@@ -6,18 +6,25 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-20T15:38:06.256Z</updated>
+  <updated>2021-03-20T15:45:54.416Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java Hashmap简介</title>
+    <title>Java并发</title>
     <link href="http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%E5%B9%B6%E5%8F%91/"/>
     <id>http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%E5%B9%B6%E5%8F%91/</id>
     <published>2021-03-20T15:37:39.636Z</published>
-    <updated>2021-03-20T15:38:06.256Z</updated>
+    <updated>2021-03-20T15:45:54.416Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="Java并发"><a href="#Java并发" class="headerlink" title="Java并发"></a>Java并发</h2><h4 id="new对象"><a href="#new对象" class="headerlink" title="new对象"></a>new对象</h4><p>new一个对象在堆内存的操作：1. Markword 8个字节   2. Class  Pointer，指向所属的Class（压缩后4个，不压缩8个）   3. Instance（成员变量与方法） 4. padding对齐<br>64位虚拟机8个字节，必须能被8个整除<br>markword记录：锁信息、GC标记信息、hashcode</p><h4 id="锁升级"><a href="#锁升级" class="headerlink" title="锁升级"></a>锁升级</h4><p>偏向锁 -&gt; 轻量级锁（自旋锁=用户态，消耗cpu资源，不经过kernel）-&gt; 重量级锁（内核态=不消耗资源，kernel调度）</p><h4 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h4><ol><li>保证线程可见性</li><li>禁止指令重排序（CPU）</li></ol><h4 id="CAS（无锁优化-自旋）"><a href="#CAS（无锁优化-自旋）" class="headerlink" title="CAS（无锁优化 自旋）"></a>CAS（无锁优化 自旋）</h4><ol><li>Compare and swap</li><li>CAS（V,     Expected，NewValue）</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Java并发&quot;&gt;&lt;a href=&quot;#Java并发&quot; class=&quot;headerlink&quot; title=&quot;Java并发&quot;&gt;&lt;/a&gt;Java并发&lt;/h2&gt;&lt;h4 id=&quot;new对象&quot;&gt;&lt;a href=&quot;#new对象&quot; class=&quot;headerlink&quot; title=</summary>
+      
     
     
     
@@ -281,10 +288,10 @@
   
   <entry>
     <title>Mysql复习</title>
-    <link href="http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/"/>
-    <id>http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/</id>
+    <link href="http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E5%81%9C%E8%BD%A6%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/"/>
+    <id>http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E5%81%9C%E8%BD%A6%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/</id>
     <published>2021-03-16T06:02:24.734Z</published>
-    <updated>2021-03-20T13:52:34.320Z</updated>
+    <updated>2021-03-20T15:48:01.981Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Mysql复习"><a href="#Mysql复习" class="headerlink" title="Mysql复习"></a>Mysql复习</h3>]]></content>
     
@@ -296,7 +303,7 @@
     
     
     
-    <category term="水电（数据库）" scheme="http://example.com/categories/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/"/>
+    <category term="水电（停车库）" scheme="http://example.com/categories/%E6%B0%B4%E7%94%B5%EF%BC%88%E5%81%9C%E8%BD%A6%E5%BA%93%EF%BC%89/"/>
     
     
   </entry>
