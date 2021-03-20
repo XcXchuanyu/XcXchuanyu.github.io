@@ -6,61 +6,61 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-20T05:25:27.505Z</updated>
+  <updated>2021-03-20T13:50:58.775Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>http和https</title>
+    <link href="http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/http%20and%20https/"/>
+    <id>http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/http%20and%20https/</id>
+    <published>2021-03-20T13:26:11.303Z</published>
+    <updated>2021-03-20T13:50:58.775Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="http-and-https"><a href="#http-and-https" class="headerlink" title="http and https"></a>http and https</h2><h3 id="get-and-post"><a href="#get-and-post" class="headerlink" title="get and post"></a>get and post</h3><p>get把请求的数据放在url上，即HTTP协议头上，其格式为：<br>以?分割URL和传输数据，参数之间以&amp;相连。<br>数据如果是英文字母/数字，原样发送，<br>如果是空格，转换为+，<br>如果是中文/其他字符，则直接把字符串用BASE64加密，及“%”加上“字符串的16进制ASCII码”。<br>post把数据放在HTTP的包体内（requrest body）。</p><p>Source:</p><p><a href="https://blog.csdn.net/qq_26360877/article/details/70665820">https://blog.csdn.net/qq_26360877/article/details/70665820</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;http-and-https&quot;&gt;&lt;a href=&quot;#http-and-https&quot; class=&quot;headerlink&quot; title=&quot;http and https&quot;&gt;&lt;/a&gt;http and https&lt;/h2&gt;&lt;h3 id=&quot;get-and-post&quot;&gt;&lt;a </summary>
+      
+    
+    
+    
+    <category term="马路（网络）" scheme="http://example.com/categories/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>二叉树复习</title>
-    <link href="http://example.com/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    <id>http://example.com/%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <link href="http://example.com/%E9%92%A2%E7%BB%93%E6%9E%84%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://example.com/%E9%92%A2%E7%BB%93%E6%9E%84%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
     <published>2021-03-20T02:29:24.031Z</published>
-    <updated>2021-03-20T05:25:27.505Z</updated>
+    <updated>2021-03-20T13:51:36.432Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="二叉树复习"><a href="#二叉树复习" class="headerlink" title="二叉树复习"></a>二叉树复习</h3><h4 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h4><p>一个节点要么是叶子节点，要么有两个子节点<br>节点数量: 2<strong>K - 1<br>第N层节点数量: 2</strong>(N - 1)</p><h4 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h4><p>preorder前序：根左右<br>inorder中序：左根右<br>后序：左右根</p><h4 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h4><p>k层，前k-1层必须全满，k层从左到右不能缺少元素<br>条件：任何节点有右无左，直接返回false<br> 一旦遇到左右孩子不双全，后续所有节点必须叶节点</p><h4 id="搜索二叉树-BST"><a href="#搜索二叉树-BST" class="headerlink" title="搜索二叉树(BST)"></a>搜索二叉树(BST)</h4><p>左孩子.max&lt;父节点&lt;右孩子.min</p><h4 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h4><p>左子树和右子树的高度差距不超过1（&lt;2</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="二叉树复习"><a href="#二叉树复习" class="headerlink" title="二叉树复习"></a>二叉树复习</h3><p><strong>满二叉树</strong>: 一个节点要么是叶子节点，要么有两个子节点<br>节点数量: 2<em>\</em>K - 1， 第N层节点数量: 2**(N - 1)</p><p><strong>遍历顺序</strong><br>preorder前序：根左右 | inorder中序：左根右 | 后序：左右根</p><p><strong>完全二叉树</strong>： k层，前k-1层必须全满，k层从左到右不能缺少元素<br>条件：任何节点有右无左，直接返回false， 一旦遇到左右孩子不双全，后续所有节点必须叶节点</p><p><strong>搜索二叉树(BST)</strong><br>左孩子.max&lt;父节点&lt;右孩子.min</p><p><strong>平衡二叉树</strong><br>左子树和右子树的高度差距不超过1</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;二叉树复习&quot;&gt;&lt;a href=&quot;#二叉树复习&quot; class=&quot;headerlink&quot; title=&quot;二叉树复习&quot;&gt;&lt;/a&gt;二叉树复习&lt;/h3&gt;&lt;h4 id=&quot;满二叉树&quot;&gt;&lt;a href=&quot;#满二叉树&quot; class=&quot;headerlink&quot; title=&quot;满二叉树&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;二叉树复习&quot;&gt;&lt;a href=&quot;#二叉树复习&quot; class=&quot;headerlink&quot; title=&quot;二叉树复习&quot;&gt;&lt;/a&gt;二叉树复习&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;满二叉树&lt;/strong&gt;: 一个节点要么是叶子节点，要么有两个子节点&lt;br&gt;节点数量: 2&lt;em&gt;</summary>
       
     
     
     
-    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="钢结构（算法）" scheme="http://example.com/categories/%E9%92%A2%E7%BB%93%E6%9E%84%EF%BC%88%E7%AE%97%E6%B3%95%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
-    <title>Mysql复习</title>
-    <link href="http://example.com/%E6%95%B0%E6%8D%AE%E5%BA%93/Hadoop%E5%AE%B6%E6%97%8F/Mysql/"/>
-    <id>http://example.com/%E6%95%B0%E6%8D%AE%E5%BA%93/Hadoop%E5%AE%B6%E6%97%8F/Mysql/</id>
-    <published>2021-03-19T11:52:19.093Z</published>
-    <updated>2021-03-19T11:52:35.110Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Mysql复习"><a href="#Mysql复习" class="headerlink" title="Mysql复习"></a>Mysql复习</h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;Mysql复习&quot;&gt;&lt;a href=&quot;#Mysql复习&quot; class=&quot;headerlink&quot; title=&quot;Mysql复习&quot;&gt;&lt;/a&gt;Mysql复习&lt;/h3&gt;</summary>
-      
-    
-    
-    
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>有趣的面试题</title>
-    <link href="http://example.com/interview/Interviews/intersting_question/"/>
-    <id>http://example.com/interview/Interviews/intersting_question/</id>
+    <title>设计师语录1</title>
+    <link href="http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/intersting_question/"/>
+    <id>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/intersting_question/</id>
     <published>2021-03-19T10:33:57.862Z</published>
-    <updated>2021-03-19T10:58:29.584Z</updated>
+    <updated>2021-03-20T13:56:21.864Z</updated>
     
     <content type="html"><![CDATA[<p>早期短链接广泛应用于图片上传网站，通过缩短网址URL链接字数，达到减少代码字符串的目的。常见于网店图片分类的使用，因有字符个数限制，采用短链接可以达到外链图片的目的。自微博盛行以来，在微博字数有限的特色下，短链接也盛行于微博网站，以节省字数给博主发布更多文字的空间。<br>问题描述：设计一个短链生成和查询系统，需要提供以下两个功能：<br>1、提供长链转换短链的接口<br>2、点击短链能跳转到对应的长链<br>题目要求：<br>1、同一个长链生成同一个短链接，不要有多个短链指向同一个长链。<br>2、同一个短链只能指向某一个长链，短链生成后要固定不变，不能再指向其它长链。<br>3、给出系统架构，需要考虑高并发解决方案。<br>4、考虑存储和缓存方案<br>数据量预估：<br>1、预计长链接总量500亿<br>2、长链换短链请求量：10W qps<br>3、短链跳转请求量：100W qps<br>设计：<br>1、长链转短链<br>发号器，每过来一个长链换短链请求发一个号，发号器所发号码从0自增，所发号码为十进制，转化为 62 进制后作为短链（62 进制对应26 小写字母加上26大写字母还有 10数字）。<br>2、短链跳转长链<br>将短链所对应号码与长链一一映射存储于表中。</p><p>优化：<br>1、长链对应唯一短链<br>当长链转短链请求过来时率先在字典树（映射）中查找该长链是否已经分配短链，如果分配，则直接返回短链，若未分配则利用发号器继续分配。字典树在发号同时建立。<br>2、系统架构与高并发<br>采用 key−value 分布式储存系统，创建更多发号器，减小发号请求高并发时的压力，比方说创建 10000个发号器，发号器编号从 0∼9999，对应每个发号器分别只发送以 0∼9999 为尾号的号码，每个发号器对应一片内存存储所发号码与长链对应的表，减小跳转访问高并发时的压力。<br>3、存储和缓存<br>利用分布式系统，采用 NoSql 数据库存储彼此一一映射，采用 LRU（最近最久未使用）算法管理内存与缓存。<br>4、其他</p>]]></content>
     
@@ -72,7 +72,7 @@
     
     
     
-    <category term="面试" scheme="http://example.com/categories/interview/"/>
+    <category term="招标现场（面试）" scheme="http://example.com/categories/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/"/>
     
     
   </entry>
@@ -116,11 +116,11 @@
   </entry>
   
   <entry>
-    <title>腾讯技术运营1</title>
-    <link href="http://example.com/interview/Interviews/tencent1/"/>
-    <id>http://example.com/interview/Interviews/tencent1/</id>
+    <title>有趣的面试题2</title>
+    <link href="http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/"/>
+    <id>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/</id>
     <published>2021-03-18T08:19:01.068Z</published>
-    <updated>2021-03-19T10:58:42.430Z</updated>
+    <updated>2021-03-20T13:55:34.151Z</updated>
     
     <content type="html"><![CDATA[<p>HDFS写数据</p><p>Hbase写数据</p><p>Spark streaming原理</p>]]></content>
     
@@ -135,17 +135,17 @@
     
     
     
-    <category term="面试" scheme="http://example.com/categories/interview/"/>
+    <category term="招标现场（面试）" scheme="http://example.com/categories/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
-    <title>腾讯技术支持2</title>
-    <link href="http://example.com/interview/Interviews/tencent2/"/>
-    <id>http://example.com/interview/Interviews/tencent2/</id>
+    <title>有趣的面试题2</title>
+    <link href="http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent2/"/>
+    <id>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent2/</id>
     <published>2021-03-18T08:18:40.635Z</published>
-    <updated>2021-03-20T05:21:04.775Z</updated>
+    <updated>2021-03-20T13:55:27.277Z</updated>
     
     <content type="html"><![CDATA[<h3 id="TCP与UDP"><a href="#TCP与UDP" class="headerlink" title="TCP与UDP"></a>TCP与UDP</h3><p>TCP (Transmission Control Protocol)和UDP(User Datagram Protocol)协议属于传输层协议。其中TCP提供IP环境下的数据可靠传输，它提供的服务包括数据流传送、可靠性、有效流控、全双工操作和多路复用。通过面向连接、端到端和可靠的数据包发送。通俗说，它是事先为所发送的数据开辟出连接好的通道，然后再进行数据发送;而UDP则不为IP提供可靠性、 流控或差错恢复功能。一般来说，TCP对应的是可靠性要求高的应用，而UDP对应的则是可靠性要求低、传输经济的应用。TCP支持的应用协议主要 有：Telnet、FTP、SMTP等;UDP支持的应用层协议主要有：NFS(网络文件系统)、SNMP(简单网络管理协议)、DNS(主域名称系 统)、TFTP(通用文件传输协议)等</p><p>TCP/IP下有什么协议</p><p><img src="https://s5.51cto.com/oss/201906/17/06645dfb1e9914c032358fbc8ee2641c.jpeg" alt="太厉害了，终于有人能把TCP/IP 协议讲的明明白白了"></p><h3 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h3><p>上图中的窗口内的数据即便没有收到确认应答也可以被发送出去。不过，在整个窗口的确认应答没有到达之前，如果其中部分数据出现丢包，那么发送端仍然要负责重传。为此，发送端主机需要设置缓存保留这些待被重传的数据，直到收到他们的确认应答。</p><p>在滑动窗口以外的部分包括未发送的数据以及已经确认对端已收到的数据。当数据发出后若如期收到确认应答就可以不用再进行重发，此时数据就可以从缓存区清除。</p><p>收到确认应答的情况下，将窗口滑动到确认应答中的序列号的位置。这样可以顺序地将多个段同时发送提高通信性能。这种机制也别称为滑动窗口控制。</p><h3 id="https加密过程"><a href="#https加密过程" class="headerlink" title="https加密过程"></a>https加密过程</h3><p><img src="https://pic2.zhimg.com/v2-a0d10af45e785fe8d3f5cd12f8c309f5_r.jpg" alt="preview"></p><ol><li>客户端请求服务器获取<code>证书公钥</code></li><li>客户端(SSL/TLS)解析证书（无效会弹出警告）</li><li>生成随机值</li><li>用<code>公钥加密</code>随机值生成<strong>密钥</strong></li><li>客户端将<code>秘钥</code>发送给服务器</li><li>服务端用<code>私钥</code>解密<code>秘钥</code>得到随机值</li><li><code>将信息和随机值混合在一起</code>进行对称加密</li><li>将加密的内容发送给客户端</li><li>客户端用<code>秘钥</code>解密信息</li></ol><h3 id="排序的稳定性："><a href="#排序的稳定性：" class="headerlink" title="排序的稳定性："></a>排序的稳定性：</h3><p>十大排序：冒泡排序, 选择排序, 插入排序， 希尔排序， 归并排序， 快速排序[不稳定]， 堆排序[不稳定]， 基数排序</p><p>首先，排序算法的稳定性大家应该都知道，通俗地讲就是能保证排序前2个相等的数其在序列的前后位置顺序和排序后它们两个的前后位置顺序相同。在简单形式化一下，如果Ai = Aj, Ai原来在位置前，排序后Ai还是要在Aj位置前。</p><p>其次，说一下稳定性的好处。排序算法如果是稳定的，那么从一个键上排序，然后再从另一个键上排序，第一个键排序的结果可以为第二个键排序所用。基数排序就 是这样，先按低位排序，逐次按高位排序，低位相同的元素其顺序再高位也相同时是不会改变的。</p><p>附加：</p><p>如何识别一个通信：源IP、目标IP、协议号、源端口号、目标端口号</p><p>UDP 常用于一下几个方面：1.包总量较少的通信（DNS、SNMP等）；2.视频、音频等多媒体通信（即时通信）；3.限定于 LAN 等特定网络中的应用通信；4.广播通信（广播、多播）。</p><h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><p><a href="https://www.nowcoder.com/discuss/618550?channel=666&amp;source_id=feed_index_nctrack">https://www.nowcoder.com/discuss/618550?channel=666&amp;source_id=feed_index_nctrack</a></p>]]></content>
     
@@ -157,17 +157,17 @@
     
     
     
-    <category term="面试" scheme="http://example.com/categories/interview/"/>
+    <category term="招标现场（面试）" scheme="http://example.com/categories/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>MyBigdataProject复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/mybigdataproject/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/mybigdataproject/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/mybigdataproject/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/mybigdataproject/</id>
     <published>2021-03-16T08:17:25.175Z</published>
-    <updated>2021-03-19T11:47:15.038Z</updated>
+    <updated>2021-03-20T13:54:13.537Z</updated>
     
     <content type="html"><![CDATA[<p><img src="D:\myGithub\blog\source_posts\image\bigdata-project-structure.jpg"></p><p>Kafka(flume - Spark Streaming), Sqoop(Hive - Mysql)</p><p>Flume(Nginx - data aggregation - data split to hbase and kafka) </p>]]></content>
     
@@ -180,17 +180,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Hadoop复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/HDFS/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/HDFS/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/HDFS/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/HDFS/</id>
     <published>2021-03-16T07:52:28.771Z</published>
-    <updated>2021-03-19T11:46:50.880Z</updated>
+    <updated>2021-03-20T13:54:00.891Z</updated>
     
     <content type="html"><![CDATA[<p>client</p><p>namenode</p><p>Secondary namenode 热备份，定期合并fsimage和edits log</p><p>Datanode: block大小64M</p>]]></content>
     
@@ -206,17 +206,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux复习</title>
-    <link href="http://example.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/"/>
-    <id>http://example.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/</id>
+    <link href="http://example.com/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/"/>
+    <id>http://example.com/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/</id>
     <published>2021-03-16T06:16:15.457Z</published>
-    <updated>2021-03-20T03:06:48.289Z</updated>
+    <updated>2021-03-20T13:52:52.760Z</updated>
     
     <content type="html"><![CDATA[<p>绝对路径：/etc/init.d</p><p>主目录：~/</p><p>创建文件：touch, vi</p><p>复制：cp</p><p>权限修改：chmod 777, </p><p>读、写、执行（7：0111）</p><p>读、执行（5：0101）</p><p>执行（1：0001）</p><p>查看文件内容：vi, cat, more, less(分页显示), tail, head</p><p>终端、黑洞文件：/dev/tty         /dev/null</p><p>wc：行号单词数</p><p>通配符：“?” 单个字符， “*”多个字符 [a-z]集合或单个字符</p><p>grep 用正则表达式匹配行</p><p>Linux查看进程状态：</p><p>不可中断状态，暂停状态/跟踪状态，就绪状态，运行状态，可中断睡眠状态，僵尸状态，退出状态</p><p>ps: 查看进程</p><p>搜索文件：</p><p>find whereis locate</p><p>compgen -c 打印所有支持的命令列表</p>]]></content>
     
@@ -235,17 +235,17 @@
     
     
     
-    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="地基（操作系统）" scheme="http://example.com/categories/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Mysql复习</title>
-    <link href="http://example.com/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/"/>
-    <id>http://example.com/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/</id>
+    <link href="http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/"/>
+    <id>http://example.com/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql/</id>
     <published>2021-03-16T06:02:24.734Z</published>
-    <updated>2021-03-19T11:48:22.684Z</updated>
+    <updated>2021-03-20T13:52:34.320Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Mysql复习"><a href="#Mysql复习" class="headerlink" title="Mysql复习"></a>Mysql复习</h3>]]></content>
     
@@ -257,17 +257,17 @@
     
     
     
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="水电（数据库）" scheme="http://example.com/categories/%E6%B0%B4%E7%94%B5%EF%BC%88%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>zookeeper复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/zookeeper/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/zookeeper/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/zookeeper/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/zookeeper/</id>
     <published>2021-03-16T04:25:03.546Z</published>
-    <updated>2021-03-19T11:47:50.604Z</updated>
+    <updated>2021-03-20T13:54:30.088Z</updated>
     
     <content type="html"><![CDATA[<p>Zookeeper 是一个开放源码的分布式协调服务， 它是集群的管理者，监视着集群中各个节点的状态根据节点提交的反馈进行下一步合理操作。最终， 将简单易用的接口和性能高效、功能稳定的系统提供给用户。提供：文件系统，通知机制。</p><p>保证了分布式一致性特征：顺序一致性，原子性， 单一视图，可靠性，实时性。</p><p>读请求 - 单一机器处理； 写请求 - 多机器达成一致后处理</p><p>ZAB协议：分布式协调服务Zookeeper 专门设计的一种支持<strong>崩溃恢复</strong>的原子<strong>广播</strong>协议。</p><h3 id="zookeeper文件系统"><a href="#zookeeper文件系统" class="headerlink" title="zookeeper文件系统"></a>zookeeper文件系统</h3><p>Zookeeper 为了保证高吞吐和低延迟， 在内存中维护了这个树状的目录结构， 这种特性使得Zookeeper 不能用于存放大量的数据， 每个节点的存放数据上限为1M。<br>多层级命名空间（znode）</p><h3 id="zookeeper-Watcher"><a href="#zookeeper-Watcher" class="headerlink" title="zookeeper Watcher"></a>zookeeper Watcher</h3><p>客户端注册watcher, 服务端处理watcher, 客户端回调watcher</p><h3 id="四种类型的数据节点znode"><a href="#四种类型的数据节点znode" class="headerlink" title="四种类型的数据节点znode:"></a>四种类型的数据节点znode:</h3><ol><li>持久节点 2. 临时节点 3. 持久顺序节点（追加顺序书行，节点名后面会追加一个由父节点维护的自增整型数字） 4.临时顺序节点</li></ol><h3 id="节点的角色与工作状态"><a href="#节点的角色与工作状态" class="headerlink" title="节点的角色与工作状态"></a>节点的角色与工作状态</h3><p><strong>角色</strong></p><p>Leader 事务请求的调度和处理，保证顺序性；内部服务调度</p><p>Follower 处理非事务请求， 投票</p><p>Observer 3.0后引入用于提升集群非事务处理能力，处理非事务请求， 不投票</p><p><strong>四种工作状态</strong></p><p>Looking: 寻找leader,进入leader选举状态<br>Following: follower<br>Leading: Leader<br>Observing: Observer</p><h3 id="ZK集群"><a href="#ZK集群" class="headerlink" title="ZK集群"></a>ZK集群</h3><p>follower宕机，两个服务器继续提供服务，半数节点正常即可继续工作<br>Leader宕机，zookeeper选举新的Leader<br>部署模式：单机，伪分布，集群<br>单机与伪分布：都是单机运行，单机模式直接用本地文件系统，伪分布式用不同java进程模拟分布式结点<br>扩容： 1. 全部重启 2. 根据过半存活原则逐个重启</p><p>zookeeper客户端：zkclient或Curator</p>]]></content>
     
@@ -280,17 +280,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Kafka复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Kafka/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Kafka/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Kafka/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Kafka/</id>
     <published>2021-03-16T03:33:54.520Z</published>
-    <updated>2021-03-19T11:46:59.061Z</updated>
+    <updated>2021-03-20T13:54:08.353Z</updated>
     
     <content type="html"><![CDATA[<p><img src="D:\myGithub\blog\source_posts\image\kafka_structure.png"></p><p>Broker: 一个kafka节点，储存与转发，一个broker多个topics</p><p>Topic: 消息</p><p>offset: 消息在日志中的位置，topic在partition上的偏移量</p><p>partition: topic分区，一个topic多个partition</p><p>Zookeeper: 保存broker、topic、partition等meta数据，broker故障发现，选举leader、负载均衡</p>]]></content>
     
@@ -305,17 +305,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Hbase复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Hbase/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Hbase/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Hbase/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Hbase/</id>
     <published>2021-03-16T03:33:41.307Z</published>
-    <updated>2021-03-19T11:46:41.497Z</updated>
+    <updated>2021-03-20T13:53:55.246Z</updated>
     
     <content type="html"><![CDATA[<p>Hbase 是分布式、面向列的开源数据库（其实准确的说是面向列族）。HDFS 为Hbase 提供可靠的底层数据存储服务，MapReduce 为Hbase 提供高性能的计算能力，Zookeeper 为Hbase 提供稳定服务和Failover 机制，因此我们说Hbase 是一个通过大量廉价的机器解决海量数据的高速存储和读取的分布式数据库解决方案。</p><h3 id="Column-Family"><a href="#Column-Family" class="headerlink" title="Column Family"></a>Column Family</h3><p>创建表时就可以实现数据存</p><h3 id="Rowkey"><a href="#Rowkey" class="headerlink" title="Rowkey"></a>Rowkey</h3><p>用TimeStamp来区分同一rowkey下的数据</p><p>写操作： 1. 获取RegionSever 2. 请求些Hlog 3. 请求写MemStore（之后逐渐刷入HDFS中）</p><p><img src="D:\myGithub\blog\source_posts\image\hbase-structure.png"></p>]]></content>
     
@@ -327,17 +327,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>Hive复习</title>
-    <link href="http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Hive/"/>
-    <id>http://example.com/Hadoop%E5%AE%B6%E6%97%8F/Hadoop%E5%AE%B6%E6%97%8F/Hive/</id>
+    <link href="http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Hive/"/>
+    <id>http://example.com/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/Hadoop%E5%AE%B6%E6%97%8F/Hive/</id>
     <published>2021-03-16T03:21:20.614Z</published>
-    <updated>2021-03-19T11:46:55.199Z</updated>
+    <updated>2021-03-20T13:54:05.075Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h2><p>Hive 是一个构建在 Hadoop 之上的数据仓库，它可以将结构化的数据文件映射成表，并提供类 SQL 查询功能，用于查询的 SQL 语句会被转化为 MapReduce 作业，然后提交到 Hadoop 上运行。</p><p><img src="D:\myGithub\blog\source_posts\image\hive-structure.png"></p><h3 id="Metastore"><a href="#Metastore" class="headerlink" title="Metastore"></a>Metastore</h3><p>在 Hive 中，表名、表结构、字段名、字段类型、表的分隔符等统一被称为元数据。所有的元数据默认存储在 Hive 内置的 derby 数据库中，但由于 derby 只能有一个实例，也就是说不能有多个命令行客户端同时访问，所以在实际生产环境中，通常使用 MySQL 代替 derby。</p><p>Hive 进行的是统一的元数据管理，就是说你在 Hive 上创建了一张表，然后在 presto／impala／sparksql 中都是可以直接使用的，它们会从 Metastore 中获取统一的元数据信息，同样的你在 presto／impala／sparksql 中创建一张表，在 Hive 中也可以直接使用。</p><p>skewindata, key 随机进桶</p>]]></content>
     
@@ -349,17 +349,17 @@
     
     
     
-    <category term="Hadoop家族" scheme="http://example.com/categories/Hadoop%E5%AE%B6%E6%97%8F/"/>
+    <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
     
     
   </entry>
   
   <entry>
     <title>进程相关</title>
-    <link href="http://example.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
-    <id>http://example.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</id>
+    <link href="http://example.com/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/"/>
+    <id>http://example.com/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</id>
     <published>2021-03-15T11:44:34.877Z</published>
-    <updated>2021-03-20T03:11:30.216Z</updated>
+    <updated>2021-03-20T13:52:44.900Z</updated>
     
     <content type="html"><![CDATA[<h2 id="进程间的通信方式"><a href="#进程间的通信方式" class="headerlink" title="进程间的通信方式"></a>进程间的通信方式</h2><ol><li><p>管道</p><blockquote><p> netstat -tulnp | grep 8080// 匿名管道<br> mkfifo test<br> echo “hahaha” &gt; test //命名管道<br>机制类似于缓存，进程会等待另一个进程取出数据，<strong>单向传播</strong></p></blockquote></li><li><p>消息队列<br>也类似于缓存，将数据写入内存，可以不等待取出<br>con: 数据量大很占内存</p></li><li><p>共享内存<br>两个进程共享一块虚拟内存空间，进行内存共享</p></li><li><p>信号量<br>一种计数器，类似于锁</p></li><li><p>socket<br>两台主机远程通信</p></li></ol><h2 id="进程（process）与线程（thread）"><a href="#进程（process）与线程（thread）" class="headerlink" title="进程（process）与线程（thread）"></a>进程（process）与线程（thread）</h2><p>工厂：CPU<br>进程： 车间<br>线程： 工人<br>工厂共享空间: 内存<br>给内存的锁：互斥锁（Mutex），防止多线程读写同一内存<br>可以限制线程数量,在门口挂n把钥匙：信号量（Semaphore）</p><h2 id="操作系统设计"><a href="#操作系统设计" class="headerlink" title="操作系统设计"></a>操作系统设计</h2><ul><li>多进程 – 多任务</li><li>多线程 – 单任务多线程</li><li>协调机制，防止线程与线程，进程与进程冲突，运行共享资源</li></ul><h2 id="进程三种基本状态"><a href="#进程三种基本状态" class="headerlink" title="进程三种基本状态"></a>进程三种基本状态</h2><p><strong>就绪(Ready)状态</strong></p><p>当进程已分配到除CPU以外的所有必要的资源，只要获得处理机便可立即执行，这时的进程状态称为就绪状态。</p><p><strong>执行(Running)状态</strong><br>当进程已获得处理机，其程序正在处理机上执行，此时的进程状态称为执行状态。</p><p><strong>阻塞(Blocked)状态</strong><br>正在执行的进程，由于等待某个事件发生而无法执行时，便放弃处理机而处于阻塞状态。引起进程阻塞的事件可有多种，例如，等待I/O完成、申请缓冲区不能满足、等待信件(信号)等。</p><p><strong>进程三种状态间的转换</strong></p><p>(1) 就绪→执行<br>处于就绪状态的进程，当进程调度程序为之分配了处理机后，该进程便由就绪状态转变成执行状态。</p><p>(2) 执行→就绪<br>处于执行状态的进程在其执行过程中，因分配给它的一个时间片已用完而不得不让出处理机，于是进程从执行状态转变成就绪状态。</p><p>(3) 执行→阻塞<br>正在执行的进程因等待某种事件发生而无法继续执行时，便从执行状态变成阻塞状态。</p><p>(4) 阻塞→就绪<br>处于阻塞状态的进程，若其等待的事件已经发生，于是进程由阻塞状态转变为就绪状态。</p><p>Source:</p><p><a href="https://blog.csdn.net/nilxin/article/details/7437671">https://blog.csdn.net/nilxin/article/details/7437671</a></p>]]></content>
     
@@ -374,7 +374,7 @@
     
     
     
-    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="地基（操作系统）" scheme="http://example.com/categories/%E5%9C%B0%E5%9F%BA%EF%BC%88%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%89/"/>
     
     
   </entry>
