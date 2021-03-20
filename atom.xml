@@ -380,6 +380,54 @@
   </entry>
   
   <entry>
+    <title>TCP三次握手四次挥手</title>
+    <link href="http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/"/>
+    <id>http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</id>
+    <published>2021-03-15T07:33:11.989Z</published>
+    <updated>2021-03-20T13:58:54.177Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手"></a>TCP三次握手</h2><p>刚开始客户端处于 closed 的状态，服务端处于 listen 状态。</p><p><strong>第一次握手</strong>：建立连接时，客户端发送syn包（syn=j）[j 是 Client初始化序列号]到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号（Synchronize Sequence Numbers）。</p><p><strong>第二次握手</strong>：服务器收到syn包，必须确认客户的SYN, 准备ACK报文（ack=j+1），同时自己也发送一个SYN包（syn=k）[k 是 Server 的初始化序列号]，即SYN+ACK包，此时服务器进入SYN_RECV状态；</p><p><strong>第三次握手</strong>：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=k+1），此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态，完成三次握手</p><h3 id="三次握手目的"><a href="#三次握手目的" class="headerlink" title="三次握手目的"></a>三次握手目的</h3><ul><li>确认双方的接收与发送能力是否正常。</li><li>指定初始化序列号</li><li>为https做准备</li></ul><blockquote><p>这里我顺便解释一下为啥只有三次握手才能确认双方的接受与发送能力是否正常，而两次却不可以：<br>第一次握手：客户端发送网络包，服务端收到了。服务端：客户端的发送能力、服务端的接收能力是正常的。<br>第二次握手：服务端发包，客户端收到了。客户端：服务端的接收、发送能力，客户端的接收、发送能力是正常的。<br>第三次握手：客户端发包，服务端收到了。服务端：客户端的接收、发送能力正常，服务器自己的发送、接收能力也正常。</p></blockquote><h3 id="其他考点"><a href="#其他考点" class="headerlink" title="其他考点"></a>其他考点</h3><p>ISN是动态生成的，防止攻击者猜出确认号</p><p>半连接队列：服务器第一次收到客户端的 SYN 之后，就会处于 SYN_RCVD 状态，此时双方还没有完全建立其连接，服务器会把此种状态下请求连接放在一个队列里，我们把这种队列称之为<strong>半连接队列</strong>。当然还有一个<strong>全连接队列</strong>，就是已经完成三次握手，建立起连接的就会放在全连接队列中。如果队列满了就有可能会出现丢包现象。</p><h2 id="TCP四次挥手"><a href="#TCP四次挥手" class="headerlink" title="TCP四次挥手"></a>TCP四次挥手</h2><p>刚开始双方都处于 establised 状态，假如是客户端先发起关闭请求，则：</p><p>第一次挥手：客户端发送一个 FIN 报文，报文中会指定一个序列号。此时客户端处于<strong>FIN_WAIT1</strong>状态。</p><p>第二次握手(先发ACK)：服务端收到 FIN 之后，会发送 ACK 报文，且把客户端的序列号值 + 1 作为 ACK 报文的序列号值，表明已经收到客户端的报文了，此时服务端处于 <strong>CLOSE_WAIT</strong>状态。</p><p>第三次挥手(再发FIN)：如果服务端也想断开连接了，和客户端的第一次挥手一样，发给 FIN 报文，且指定一个序列号。此时服务端处于 <strong>LAST_ACK</strong> 的状态。</p><p>第四次挥手：客户端收到 FIN 之后，一样发送一个 ACK 报文作为应答，且把服务端的序列号值 + 1 作为自己 ACK 报文的序列号值，此时客户端处于 <strong>TIME_WAIT</strong> 状态。需要过一阵子以确保服务端收到自己的 ACK 报文之后才会进入 CLOSED 状态</p><p>服务端收到 ACK 报文之后，就处于关闭连接了，处于 CLOSED 状态。</p><p>考点：</p><p>为什么客户端发送 ACK 之后不直接关闭，而是要等一阵子才关闭。这其中的原因就是，要确保服务器是否已经收到了我们的 ACK 报文，如果没有收到的话，服务器会重新发 FIN 报文给客户端，客户端再次收到 FIN 报文之后，就知道之前的 ACK 报文丢失了，然后再次发送 ACK 报文。</p><p>至于 TIME_WAIT 持续的时间至少是一个报文的来回时间(2MSL)。一般会设置一个计时，如果过了这个计时没有再次收到 FIN 报文，则代表对方成功就是 ACK 报文，此时处于 CLOSED 状态。</p><p>Source:<br><a href="https://blog.csdn.net/qq_18425655/article/details/52163228">https://blog.csdn.net/qq_18425655/article/details/52163228</a><br><a href="https://juejin.cn/post/6844903834708344840#heading-0">https://juejin.cn/post/6844903834708344840#heading-0</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;TCP三次握手&quot;&gt;&lt;a href=&quot;#TCP三次握手&quot; class=&quot;headerlink&quot; title=&quot;TCP三次握手&quot;&gt;&lt;/a&gt;TCP三次握手&lt;/h2&gt;&lt;p&gt;刚开始客户端处于 closed 的状态，服务端处于 listen 状态。&lt;/p&gt;
+&lt;p&gt;&lt;stron</summary>
+      
+    
+    
+    
+    <category term="马路（网络）" scheme="http://example.com/categories/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>正向代理与反向代理</title>
+    <link href="http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/proxy/"/>
+    <id>http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/proxy/</id>
+    <published>2021-02-26T11:31:50.924Z</published>
+    <updated>2021-03-20T13:58:50.504Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>正向代理</p><p>代理访问外部资源</p><p>正向代理 是一个位于客户端和原始服务器(origin server)之间的服务器，为了从原始服务器取得内容，客户端向代理发送一个请求并指定目标(原始服务器)，然后代理向原始服务器转交请求并将获得的内容返回给客户端。客户端必须要进行一些特别的设置才能使用正向代理。</p></li></ol><ol start="2"><li><p>反向代理</p><p>反向代理以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个服务器。</p></li></ol><ol start="3"><li><p>反向代理的作用：</p><p>（1）保证内网的安全，可以使用反向代理提供WAF功能，阻止web攻击</p><p>（2）负载均衡，通过反向代理服务器来优化网站的负载</p></li></ol><p><img src="https://images2015.cnblogs.com/blog/305504/201611/305504-20161112125907030-1432469707.png" alt="img"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;正向代理&lt;/p&gt;
+&lt;p&gt;代理访问外部资源&lt;/p&gt;
+&lt;p&gt;正向代理 是一个位于客户端和原始服务器(origin server)之间的服务器，为了从原始服务器取得内容，客户端向代理发送一个请求并指定目标(原始服务器)，然后代理向原始服务器转交请求并将获得的内容</summary>
+      
+    
+    
+    
+    <category term="马路（网络）" scheme="http://example.com/categories/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>CS5331 Web Security</title>
     <link href="http://example.com/NUS-Module/NUS%20Module/CS5331%20Web%20Security/"/>
     <id>http://example.com/NUS-Module/NUS%20Module/CS5331%20Web%20Security/</id>
@@ -419,46 +467,6 @@
     
     
     <category term="NUS Module" scheme="http://example.com/categories/NUS-Module/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2020回顾——旅行篇（二）</title>
-    <link href="http://example.com/uncategorized/travel3/"/>
-    <id>http://example.com/uncategorized/travel3/</id>
-    <published>2021-01-02T16:28:37.429Z</published>
-    <updated>2021-03-15T02:47:09.042Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="2020回顾——旅行篇"><a href="#2020回顾——旅行篇" class="headerlink" title="2020回顾——旅行篇"></a>2020回顾——旅行篇</h2><h3 id="再顾云南"><a href="#再顾云南" class="headerlink" title="再顾云南"></a>再顾云南</h3><h4 id="昆明大理"><a href="#昆明大理" class="headerlink" title="昆明大理"></a>昆明大理</h4><h4 id="丽江"><a href="#丽江" class="headerlink" title="丽江"></a>丽江</h4><h4 id="香格里拉"><a href="#香格里拉" class="headerlink" title="香格里拉"></a>香格里拉</h4>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;2020回顾——旅行篇&quot;&gt;&lt;a href=&quot;#2020回顾——旅行篇&quot; class=&quot;headerlink&quot; title=&quot;2020回顾——旅行篇&quot;&gt;&lt;/a&gt;2020回顾——旅行篇&lt;/h2&gt;&lt;h3 id=&quot;再顾云南&quot;&gt;&lt;a href=&quot;#再顾云南&quot; class=&quot;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2020回顾——旅行篇（二）</title>
-    <link href="http://example.com/uncategorized/travel2/"/>
-    <id>http://example.com/uncategorized/travel2/</id>
-    <published>2021-01-02T16:28:21.967Z</published>
-    <updated>2021-03-20T05:26:30.373Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="2020回顾——旅行篇"><a href="#2020回顾——旅行篇" class="headerlink" title="2020回顾——旅行篇"></a>2020回顾——旅行篇</h2><h3 id="冲击西域！"><a href="#冲击西域！" class="headerlink" title="冲击西域！"></a>冲击西域！</h3><h4 id="西安"><a href="#西安" class="headerlink" title="西安"></a>西安</h4><h4 id="兰州"><a href="#兰州" class="headerlink" title="兰州"></a>兰州</h4><h4 id="夏河"><a href="#夏河" class="headerlink" title="夏河"></a>夏河</h4><h4 id="西宁"><a href="#西宁" class="headerlink" title="西宁"></a>西宁</h4><h4 id="环青海湖"><a href="#环青海湖" class="headerlink" title="环青海湖"></a>环青海湖</h4>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;2020回顾——旅行篇&quot;&gt;&lt;a href=&quot;#2020回顾——旅行篇&quot; class=&quot;headerlink&quot; title=&quot;2020回顾——旅行篇&quot;&gt;&lt;/a&gt;2020回顾——旅行篇&lt;/h2&gt;&lt;h3 id=&quot;冲击西域！&quot;&gt;&lt;a href=&quot;#冲击西域！&quot; class</summary>
-      
-    
-    
     
     
   </entry>
