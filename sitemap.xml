@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/NUS-Module/NUS%20Module/CS5332%20Biometric%20Authentication/</loc>
+    
+    <lastmod>2021-03-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%20Hashmap/</loc>
+    
+    <lastmod>2021-03-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%20compator/</loc>
+    
+    <lastmod>2021-03-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/</loc>
+    
+    <lastmod>2021-03-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/%E7%BD%91%E7%BB%9C/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</loc>
     
     <lastmod>2021-03-20</lastmod>
@@ -17,13 +45,6 @@
   
   <url>
     <loc>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/intersting_question/</loc>
-    
-    <lastmod>2021-03-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/</loc>
     
     <lastmod>2021-03-20</lastmod>
     
@@ -163,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/uncategorized/NUS%20Module/CS5332%20Biometric%20Authentication/</loc>
-    
-    <lastmod>2021-03-18</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/uncategorized/travel3/</loc>
     
     <lastmod>2021-03-15</lastmod>
@@ -231,6 +245,13 @@
   
   <url>
     <loc>http://example.com/categories/%E9%A9%AC%E8%B7%AF%EF%BC%88%E7%BD%91%E7%BB%9C%EF%BC%89/</loc>
+    <lastmod>2021-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/</loc>
     <lastmod>2021-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

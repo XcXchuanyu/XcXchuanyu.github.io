@@ -103,24 +103,26 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/uncategorized/NUS%20Module/CS5332%20Biometric%20Authentication/"/>
-    <id>http://example.com/uncategorized/NUS%20Module/CS5332%20Biometric%20Authentication/</id>
+    <title>CS5332 Biometric Authentication</title>
+    <link href="http://example.com/NUS-Module/NUS%20Module/CS5332%20Biometric%20Authentication/"/>
+    <id>http://example.com/NUS-Module/NUS%20Module/CS5332%20Biometric%20Authentication/</id>
     <published>2021-03-18T15:20:26.565Z</published>
-    <updated>2021-03-18T15:20:26.565Z</updated>
+    <updated>2021-03-20T14:04:45.926Z</updated>
     
     
     
+    
+    <category term="NUS Module" scheme="http://example.com/categories/NUS-Module/"/>
     
     
   </entry>
   
   <entry>
-    <title>有趣的面试题2</title>
+    <title>有趣的面试题1</title>
     <link href="http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/"/>
     <id>http://example.com/%E6%8B%9B%E6%A0%87%E7%8E%B0%E5%9C%BA%EF%BC%88%E9%9D%A2%E8%AF%95%EF%BC%89/Interviews/tencent1/</id>
     <published>2021-03-18T08:19:01.068Z</published>
-    <updated>2021-03-20T13:55:34.151Z</updated>
+    <updated>2021-03-20T14:04:02.505Z</updated>
     
     <content type="html"><![CDATA[<p>HDFS写数据</p><p>Hbase写数据</p><p>Spark streaming原理</p>]]></content>
     
@@ -207,6 +209,28 @@
     
     
     <category term="塔吊（Hadoop）" scheme="http://example.com/categories/%E5%A1%94%E5%90%8A%EF%BC%88Hadoop%EF%BC%89/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java Hashmap简介</title>
+    <link href="http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%20Hashmap/"/>
+    <id>http://example.com/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/JAVA/Java%20Hashmap/</id>
+    <published>2021-03-16T06:50:52.158Z</published>
+    <updated>2021-03-20T14:04:17.362Z</updated>
+    
+    <content type="html"><![CDATA[<p>HashMap 基于 hashing 原理，我们通过 put ()和 get ()方法储存和获取对象。当我们将键值对传递给 put ()方法时，它调用键对象的 hashCode ()方法来计算 hashcode，让后找到 bucket 位置来储存值对象。当获取对象时，通过键对象的 equals ()方法找到正确的键值对，然后返回值对象。HashMap 使用 LinkedList 来解决碰撞问题，当发生碰撞了，对象将会储存在 LinkedList 的下一个节点中。 HashMap 在每个 LinkedList 节点中储存键值对对象。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;HashMap 基于 hashing 原理，我们通过 put ()和 get ()方法储存和获取对象。当我们将键值对传递给 put ()方法时，它调用键对象的 hashCode ()方法来计算 hashcode，让后找到 bucket 位置来储存值对象。当获取对象时，通过键</summary>
+      
+    
+    
+    
+    <category term="水泥（Java）" scheme="http://example.com/categories/%E6%B0%B4%E6%B3%A5%EF%BC%88Java%EF%BC%89/"/>
     
     
   </entry>
@@ -440,28 +464,6 @@
       
       
     <summary type="html">&lt;h2 id=&quot;Lecture-2-Network-level-attacks&quot;&gt;&lt;a href=&quot;#Lecture-2-Network-level-attacks&quot; class=&quot;headerlink&quot; title=&quot;Lecture 2: Network-level attac</summary>
-      
-    
-    
-    
-    <category term="NUS Module" scheme="http://example.com/categories/NUS-Module/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IND5005 5% theory</title>
-    <link href="http://example.com/NUS-Module/NUS%20Module/5%%20theory/"/>
-    <id>http://example.com/NUS-Module/NUS%20Module/5%%20theory/</id>
-    <published>2021-02-22T10:28:53.258Z</published>
-    <updated>2021-03-19T11:46:06.063Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="5-zone-should-be-performed-well-with-Boss’s-Boss"><a href="#5-zone-should-be-performed-well-with-Boss’s-Boss" class="headerlink" title="5% zone should be performed well with Boss’s Boss"></a>5% zone should be performed well with Boss’s Boss</h3><h4 id="Foundational-Concepts"><a href="#Foundational-Concepts" class="headerlink" title="Foundational Concepts"></a>Foundational Concepts</h4><p>Create green X; Unwritten rules &gt; written rules</p><h4 id="Connect-Personally"><a href="#Connect-Personally" class="headerlink" title="Connect Personally"></a>Connect Personally</h4><p>Introduction: Name Title Function</p><p>chat (F.O.R.M) Family, Organization, Recreation, Message</p><p>Open-end questions and find something in common</p><p>Give short response, open up</p><h4 id="Articulate-Your-POV-clearly-Point-of-view"><a href="#Articulate-Your-POV-clearly-Point-of-view" class="headerlink" title="Articulate Your POV clearly (Point of view)"></a>Articulate Your POV clearly (Point of view)</h4><p>don’t <strong>rambling</strong> ; Structuring your answering before spoke; Louder + succinct</p><p>If you disagree, just stay neutral; Identify key words that change form negative to positive</p><h4 id="Communicating-confidently"><a href="#Communicating-confidently" class="headerlink" title="Communicating confidently"></a>Communicating confidently</h4><p>confidence to your stand; Use TPV(Third party view: customer feedback, competitor analysis and News)</p><p>Prepare in 5% situation; question u can ask: customer and competition</p><h4 id="Building-Trust"><a href="#Building-Trust" class="headerlink" title="Building Trust"></a>Building Trust</h4><p>Gain the trust and credibility; Think win-win </p><p>Demonstrate concern and respect: Be consistent, dependable, predictable</p><p>Act integrity, Don’t persuade</p><h4 id="Providing-Direct-Feedback"><a href="#Providing-Direct-Feedback" class="headerlink" title="Providing Direct Feedback"></a>Providing Direct Feedback</h4><p>Constructive feedback can do a lot; Neutral way to express your idea</p><h4 id="Taking-Ownership"><a href="#Taking-Ownership" class="headerlink" title="Taking Ownership"></a>Taking Ownership</h4><p>increase your visibility using Green X</p><p>TILT: Takes action, Inspires others, Leads, Teaches</p><h4 id="Coaching-and-recognition"><a href="#Coaching-and-recognition" class="headerlink" title="Coaching and recognition"></a>Coaching and recognition</h4><p>Helps others achieve their goals</p><p>Gives others positive coaching feedback</p><p>Recognize and Rewards the efforts of others openly</p><h4 id="Person-Action-Planning"><a href="#Person-Action-Planning" class="headerlink" title="Person Action Planning"></a>Person Action Planning</h4><p>Romans are seeking Romans; E = mc^2:  energy message Communicates confidently</p><p>Better than people come before you and after you</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;5-zone-should-be-performed-well-with-Boss’s-Boss&quot;&gt;&lt;a href=&quot;#5-zone-should-be-performed-well-with-Boss’s-Boss&quot; class=&quot;headerlink&quot; tit</summary>
       
     
     
